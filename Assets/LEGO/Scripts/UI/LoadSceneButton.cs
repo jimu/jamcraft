@@ -10,6 +10,7 @@ namespace Unity.LEGO.UI
 
         public void LoadScene()
         {
+            Debug.Log($"{name}: LoadScene({sceneName}");
             SceneManager.LoadScene(sceneName);
         }
 

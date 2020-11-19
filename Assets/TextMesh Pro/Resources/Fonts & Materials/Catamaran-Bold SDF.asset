@@ -78,8 +78,8 @@ Material:
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
+    - _StencilReadMask: 1
+    - _StencilWriteMask: 0
     - _TextureHeight: 1024
     - _TextureWidth: 1024
     - _UnderlayDilate: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hashCode: -1821538369
   material: {fileID: -6656905189396515994}
-  materialHashCode: 571016174
+  materialHashCode: 1254338879
   m_Version: 1.1.0
   m_SourceFontFileGUID: 8c40122aded574c538617bb84b66784d
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 8c40122aded574c538617bb84b66784d,
@@ -1935,6 +1935,7 @@ MonoBehaviour:
   m_AtlasTextures:
   - {fileID: -2001250316082973985}
   m_AtlasTextureIndex: 0
+  m_IsMultiAtlasTexturesEnabled: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
