@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+#pragma warning disable 649
 public class UpdateHighscoreRows : MonoBehaviour
 {
     [SerializeField] ScrollRect scrollRect;
