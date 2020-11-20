@@ -67,3 +67,4 @@ crashlytics-build.properties
 !*.*.meta
 Assets/Editor/x64/Bakery/cudnn64_7.dll
 Assets/Editor/x64/Bakery/cudnn64_7.dll.meta
+debug.log
