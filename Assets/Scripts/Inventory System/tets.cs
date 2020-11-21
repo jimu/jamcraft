@@ -6,7 +6,10 @@ public class tets : MonoBehaviour {
 
     public ItemData it;
     public void test() {
-        InventorySystem.Instance.ChangeInventory(it, 20);
+        InventorySystem.Instance.AddToInventory(it, 20);
+    }
+    public void testrem() {
+        InventorySystem.Instance.RemoveFromInventory(it, 20);
     }
 
 }

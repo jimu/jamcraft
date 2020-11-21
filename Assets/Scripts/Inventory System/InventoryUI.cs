@@ -19,7 +19,7 @@ public class InventoryUI : MonoBehaviour {
             inventorySlots[i] = Instantiate(itemSlotObject, itemSlotParentTransform).GetComponent<InventorySlot>();
         }
 
-        // UpdateInventoryDisplay();
+        UpdateInventoryDisplay();
         InventorySystem.Instance.onItemChangedCallback += UpdateInventoryDisplay;
     }
 

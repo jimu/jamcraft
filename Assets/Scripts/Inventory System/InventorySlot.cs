@@ -11,7 +11,6 @@ public class InventorySlot : MonoBehaviour {
 
     public void SetItem(ItemData item, int qty) {
         itemData = item;
-        Debug.Log(item);
         itemIcon.sprite = item.itemIcon;
         if(qty >= 0 && qty <= 1) {
             itemQTY.text = "";
