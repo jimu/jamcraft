@@ -1,18 +1,23 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class BotController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class BotController : MonoBehaviour {
+
+    private NavMeshAgent navAgent;
+    private Vector3 rallyPoint;
+
+    void Start() {
+        navAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void SetRally(Vector3 rally) {
+        rallyPoint = rally;
+        navAgent.SetDestination(rally);
+    }
+
+    void Update() {
         
     }
 }

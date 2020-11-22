@@ -9,6 +9,7 @@ TagManager:
   - Projectile-Friendly
   - Projectile-Enemy
   - FriendlyBot
+  - RallyPoint
   layers:
   - Default
   - TransparentFX
