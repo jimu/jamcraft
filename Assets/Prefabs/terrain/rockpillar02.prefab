@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8738565969633160931}
   - component: {fileID: 6356183297637287992}
   - component: {fileID: 593544121530071056}
+  - component: {fileID: 2588903650181931682}
   m_Layer: 0
   m_Name: rockpillar02
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2588903650181931682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7595191990368649629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.612061, y: 16.09599, z: 15.153761}
+  m_Center: {x: -0.5410242, y: 8.047995, z: -1.7267172}

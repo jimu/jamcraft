@@ -13848,6 +13848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3795574742296431924}
+  - component: {fileID: 4557953724142810503}
   m_Layer: 0
   m_Name: turret_player_root
   m_TagString: Untagged
@@ -13871,6 +13872,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4557953724142810503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482909518512918769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2.5036325, z: 4.799418}
+  m_Center: {x: 0, y: 1.2481837, z: -0.35997462}
 --- !u!1 &3495550967783127129
 GameObject:
   m_ObjectHideFlags: 0
