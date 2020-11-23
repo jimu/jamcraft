@@ -88,11 +88,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6171160272855183609}
-  - component: {fileID: 5438823549762377324}
   - component: {fileID: 4080836034694147029}
   - component: {fileID: 378907901748571784}
   - component: {fileID: 4966798802074703643}
   - component: {fileID: 3456467278741972649}
+  - component: {fileID: 6103257095395828311}
   m_Layer: 0
   m_Name: Cannonball Friendly
   m_TagString: Projectile-Friendly
@@ -115,19 +115,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5438823549762377324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037231264084636105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca649f3bb958d487186776fe76b4e381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RotationSpeed: 0
 --- !u!136 &4080836034694147029
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -152,7 +139,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4938,3 +4925,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &6103257095395828311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037231264084636105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5350bb685e4cb8e47b837121613b2884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  distance: 60

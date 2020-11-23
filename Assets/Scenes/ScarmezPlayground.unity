@@ -379,6 +379,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334517299}
   m_CullTransparentMesh: 0
+--- !u!1 &660915632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660915634}
+  - component: {fileID: 660915633}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &660915633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660915632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148a6d0de2ca4b145b273840271576b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  homeBase: {fileID: 1658936807}
+  bots: []
+  opponent: {fileID: 1637204707}
+  defaultBotPrefab: {fileID: 8278798037870216396, guid: b5f8ab3a1883fce41b4ddfd2b90c555e,
+    type: 3}
+  enemySpawnRate: 30
+--- !u!4 &660915634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660915632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693084543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,13 +1206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a24bfd57bd62774b9d347938af28738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  homeBase: {fileID: 774533743}
   bots: []
-  inventory: {fileID: 0}
-  rallyPoint: {fileID: 1467387024}
-  cam: {fileID: 1187372500}
-  playerBase: {fileID: 774533743}
+  opponent: {fileID: 0}
   defaultBotPrefab: {fileID: 9210964640868866387, guid: 4b3dcdc7484febd45acb70b3184ddea7,
     type: 3}
+  cam: {fileID: 1187372500}
+  rallyPoint: {fileID: 1467387024}
 --- !u!4 &1637204708
 Transform:
   m_ObjectHideFlags: 0
@@ -1223,7 +1272,7 @@ PrefabInstance:
     - target: {fileID: 2816584836011746120, guid: 6545adceca2a63b4fb47130471435abe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2816584836011746120, guid: 6545adceca2a63b4fb47130471435abe,
         type: 3}
@@ -1534,12 +1583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f845e6d2635454fbec29cfd26b6692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemyBase: {fileID: 1658936807}
-  playerBase: {fileID: 774533743}
-  enemySpawnRate: 10
-  enemyUnitPrefab: {fileID: 8278798037870216396, guid: b5f8ab3a1883fce41b4ddfd2b90c555e,
-    type: 3}
+  player: {fileID: 1637204707}
+  enemy: {fileID: 660915633}
 --- !u!4 &1978303370
 Transform:
   m_ObjectHideFlags: 0
