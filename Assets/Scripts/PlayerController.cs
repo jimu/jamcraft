@@ -8,6 +8,7 @@ public class PlayerController : PlayerBase {
     public Camera cam;
     public GameObject rallyPoint;
 
+
     // Start is called before the first frame update
     void Start() {
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -15,6 +16,8 @@ public class PlayerController : PlayerBase {
 
     // Update is called once per frame
     void Update() {
+
+        UpdateBots();
 
         // Left click to rappy bots
         if(Input.GetMouseButtonDown(0)) {

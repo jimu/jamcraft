@@ -18596,7 +18596,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7230797208058053539}
+  - component: {fileID: 5990790093546290526}
   - component: {fileID: 796139062035265541}
+  - component: {fileID: -7944558999722002662}
   m_Layer: 0
   m_Name: enemybot_root
   m_TagString: Untagged
@@ -18620,6 +18622,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &5990790093546290526
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057739882562929835}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!65 &796139062035265541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18633,6 +18657,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 2.1912422, z: 7.7227926}
   m_Center: {x: 0, y: 2.1397448, z: 1.1386037}
+--- !u!114 &-7944558999722002662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057739882562929835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb043e9f847ec64d9abae93f64f3e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  radius: 2
+  projectilePoint: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  range: 60
+  attackRate: 1
+  maxHealth: 20
+  dead: 0
 --- !u!1 &4069848344853993740
 GameObject:
   m_ObjectHideFlags: 0

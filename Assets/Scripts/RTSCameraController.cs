@@ -6,17 +6,12 @@ public class RTSCameraController : MonoBehaviour {
     [SerializeField] private float panSpeed = 20f;
     
     [Header("Zoom")]
-    [SerializeField] private float zoomSpeed = 20f;
-    [SerializeField] private float minFOV = 40f;
-    [SerializeField] private float maxFOV = 90f;
+    [SerializeField] private float verticalSpeed = 10f;
+    [SerializeField] private float minHeight = 3f;
+    [SerializeField] private float maxHeight = 50f;
 
     [Header("Rotation")]
     [SerializeField] private float rotSpeed = 2f;
-
-    [Header("Camera Height")]
-    [SerializeField] private float verticalSpeed = 10f;
-    [SerializeField] private float minHeight = 3f;
-    [SerializeField] private float maxHeight = 10f;
 
     // References
     private Camera cam;
@@ -55,19 +50,13 @@ public class RTSCameraController : MonoBehaviour {
 
         // Zoom Control
         float zoom = Input.GetAxis("Mouse ScrollWheel");
-        cam.fieldOfView -= zoom * zoomSpeed;
-        cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
+        camYPOS = Mathf.Clamp(camYPOS - zoom * verticalSpeed, minHeight, maxHeight);
+        cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, camYPOS, cam.transform.localPosition.z);
+        cam.transform.LookAt(transform);
 
         // Camera Rotation
         if(rightClicked) {
             transform.Rotate(new Vector3(0,Input.GetAxis("Mouse X") * rotSpeed));
-        }
-
-        // Camera Height
-        if(middleClicked) {
-            camYPOS = Mathf.Clamp(camYPOS + Input.GetAxis("Mouse Y") * verticalSpeed * Time.deltaTime, minHeight, maxHeight);
-            cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, camYPOS, cam.transform.localPosition.z);
-            cam.transform.LookAt(transform);
         }
 
     }

@@ -7,6 +7,7 @@ public class ProjectileBase : MonoBehaviour {
     public float speed;
     public float distance;
     private PlayerBase owner;
+    public int damage;
 
     // Component References
     private Rigidbody rb;
@@ -30,7 +31,8 @@ public class ProjectileBase : MonoBehaviour {
                 Destroy(gameObject);
                 break;
             case "Enemy":
-                Debug.Log("Hit");
+                BotController bot = collision.transform.GetComponent<BotController>();
+                bot.Damage(damage);
                 Destroy(gameObject);
                 break;
         }

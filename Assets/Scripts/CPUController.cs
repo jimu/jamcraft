@@ -15,6 +15,9 @@ public class CPUController : PlayerBase {
 
     // Update is called once per frame
     void Update(){
+
+        UpdateBots();
+
         enemySpawnTimer -= Time.deltaTime;
         if(enemySpawnTimer < 0f) {
             enemySpawnTimer += enemySpawnRate;

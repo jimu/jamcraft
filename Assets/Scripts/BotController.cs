@@ -18,6 +18,10 @@ public class BotController : MonoBehaviour {
     public float range = 60f;
     private float attackTimer = 0f;
     public float attackRate = 1f;
+    public int maxHealth = 20;
+    private int health;
+
+    public bool dead = false;
     
 
     void Start() {
@@ -25,6 +29,7 @@ public class BotController : MonoBehaviour {
     }
 
     public void Initialize() {
+        health = maxHealth;
         navAgent = GetComponent<NavMeshAgent>();
         currentTarget = null;
     }
@@ -32,6 +37,15 @@ public class BotController : MonoBehaviour {
     public void SetRally(Vector3 rally) {
         rallyPoint = rally;
         navAgent.SetDestination(rally);
+    }
+
+    public void Damage(int damage) {
+        health -= damage;
+
+        if(health <= 0f) {
+            dead = true;
+        }
+
     }
 
     void Update() {
