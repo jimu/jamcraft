@@ -26,9 +26,9 @@ TagManager:
   - Hazard
   - Environment
   - postprocessing
-  - 
-  - 
-  - 
+  - Friendlyprojectile
+  - EnemyLayer
+  - Enemyprojectile
   - 
   - 
   - 

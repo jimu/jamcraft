@@ -17,7 +17,7 @@ public class BotController : MonoBehaviour {
     private Transform currentTarget;
     public float range = 60f;
     private float attackTimer = 0f;
-    private float attackRate = 1f;
+    public float attackRate = 1f;
     
 
     void Start() {
