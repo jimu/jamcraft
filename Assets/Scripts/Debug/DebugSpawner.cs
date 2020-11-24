@@ -12,9 +12,9 @@ public class BotModel
 // DEBUG: Spawns units on keypress 
 public class DebugSpawner : MonoBehaviour
 {
-    public LocomotionData locoData1;
-    public LocomotionData locoData2;
-    public LocomotionData locoData3;
+    public ChassisData chassisData1;
+    public ChassisData chassisData2;
+    public ChassisData chassisData3;
     public WeaponData weaponData1;
     public WeaponData weaponData2;
     public WeaponData weaponData3;
@@ -28,25 +28,25 @@ public class DebugSpawner : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            DebugSpawn(locoData1, weaponData1);
+            DebugSpawn(chassisData1, weaponData1);
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            DebugSpawn(locoData2, weaponData1);
+            DebugSpawn(chassisData2, weaponData1);
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            DebugSpawn(locoData2, weaponData2);
+            DebugSpawn(chassisData2, weaponData2);
         if (Input.GetKeyDown(KeyCode.Alpha4))
-            DebugSpawn(locoData2, weaponData3);
+            DebugSpawn(chassisData2, weaponData3);
         if (Input.GetKeyDown(KeyCode.Alpha5))
-            DebugSpawn(locoData3, null);
+            DebugSpawn(chassisData3, null);
     }
 
-    void DebugSpawn(LocomotionData locomotionData, WeaponData weaponData)
+    void DebugSpawn(ChassisData chassisData, WeaponData weaponData)
     {
-        Debug.Log($"Debug SpawnBot Pressed: Locomotion={locomotionData} Weapon={weaponData}");
+        Debug.Log($"Debug SpawnBot Pressed: Chassis={chassisData} Weapon={weaponData}");
 
-        GameObject bot = PoolManager.Instance.Get(locomotionData.prefab, Vector3.zero);
-        if (locomotionData.turretHardpoint != "" && weaponData != null)
+        GameObject bot = PoolManager.Instance.Get(chassisData.prefab, Vector3.zero);
+        if (chassisData.turretHardpoint != "" && weaponData != null)
         {
-            Transform pivot = bot.transform.Find(locomotionData.turretHardpoint);
+            Transform pivot = bot.transform.Find(chassisData.turretHardpoint);
             GameObject turret = PoolManager.Instance.Get(weaponData.prefab, pivot);
             if (weaponData.fireRate > 0)
                 pivot.gameObject.AddComponent<DebugTurretRotator>();
@@ -55,8 +55,8 @@ public class DebugSpawner : MonoBehaviour
         {
             NavMeshAgent agent = bot.GetComponent<NavMeshAgent>();
             agent.SetDestination(navGoal.position);
-            agent.speed = locomotionData.speed;
-            agent.angularSpeed = locomotionData.turnSpeed;
+            agent.speed = chassisData.speed;
+            agent.angularSpeed = chassisData.turnSpeed;
         }
     }
 

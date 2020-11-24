@@ -5,13 +5,13 @@ using UnityEngine;
 
 
 
-[CreateAssetMenu(fileName = "New Locomotion", menuName = "Jamcraft/Locomotion")]
-public class LocomotionData : ScriptableObject
+[CreateAssetMenu(fileName = "New Chassis", menuName = "Jamcraft/Chassis")]
+public class ChassisData : ScriptableObject
 {
-    [Tooltip("Locomotion name")]
+    [Tooltip("Chassis name")]
     public string locomotionName;
 
-    [Tooltip("Prefab used to instantiate bot locomotion/base")]
+    [Tooltip("Prefab used to instantiate bot chassis")]
     public GameObject prefab;
 
     [Tooltip("Turret Hardpoint (Child GameObject name)")]

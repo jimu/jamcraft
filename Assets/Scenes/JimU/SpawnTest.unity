@@ -1064,9 +1064,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad1fefbfe6122749bf9e7efc2be23d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locoData1: {fileID: 11400000, guid: 2998fb644c6b5ac46b75bb75a5b7c547, type: 2}
-  locoData2: {fileID: 11400000, guid: 20d1ecd947d675d42a6f09ee9f94c8ef, type: 2}
-  locoData3: {fileID: 11400000, guid: 5ca970e72325fbd468e6ae781af5e5b9, type: 2}
+  chassisData1: {fileID: 11400000, guid: 2998fb644c6b5ac46b75bb75a5b7c547, type: 2}
+  chassisData2: {fileID: 11400000, guid: 20d1ecd947d675d42a6f09ee9f94c8ef, type: 2}
+  chassisData3: {fileID: 11400000, guid: 5ca970e72325fbd468e6ae781af5e5b9, type: 2}
   weaponData1: {fileID: 11400000, guid: 8d370a5add00b114f92107ac113d2309, type: 2}
   weaponData2: {fileID: 11400000, guid: 382f597858e161e4ca81321cb9e90472, type: 2}
   weaponData3: {fileID: 11400000, guid: d26e25fa90929874eb680d3d9ac97d18, type: 2}
