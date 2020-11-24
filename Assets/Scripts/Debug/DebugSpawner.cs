@@ -14,6 +14,7 @@ public class DebugSpawner : MonoBehaviour
 {
     public LocomotionData locoData1;
     public LocomotionData locoData2;
+    public LocomotionData locoData3;
     public WeaponData weaponData1;
     public WeaponData weaponData2;
     public WeaponData weaponData3;
@@ -34,6 +35,8 @@ public class DebugSpawner : MonoBehaviour
             DebugSpawn(locoData2, weaponData2);
         if (Input.GetKeyDown(KeyCode.Alpha4))
             DebugSpawn(locoData2, weaponData3);
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            DebugSpawn(locoData3, null);
     }
 
     void DebugSpawn(LocomotionData locomotionData, WeaponData weaponData)
@@ -41,7 +44,7 @@ public class DebugSpawner : MonoBehaviour
         Debug.Log($"Debug SpawnBot Pressed: Locomotion={locomotionData} Weapon={weaponData}");
 
         GameObject bot = PoolManager.Instance.Get(locomotionData.prefab, Vector3.zero);
-        if (locomotionData.turretHardpoint != "")
+        if (locomotionData.turretHardpoint != "" && weaponData != null)
         {
             Transform pivot = bot.transform.Find(locomotionData.turretHardpoint);
             GameObject turret = PoolManager.Instance.Get(weaponData.prefab, pivot);

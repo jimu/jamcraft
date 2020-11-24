@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19443a0b731bf4c4e9551ae3c86a0ce5, type: 3}
+  m_Name: BotM1W1
+  m_EditorClassIdentifier: 
+  locomotionName: Basic Bot
+  prefab: {fileID: 195533499094915642, guid: 599c61a171f67a04085eee23031d89ed, type: 3}
+  turretHardpoint: 
+  speed: 3
+  turnSpeed: 60
+  recipe:
+    redBricks: 0
+    blueBricks: 0
+    greenBricks: 1
+    yellowBricks: 0
