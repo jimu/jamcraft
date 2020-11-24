@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-#pragma warning disable 0649
+// Implements a pool for a specific prefab
+// Used by PoolManager:  DO NOT USE DIRECTLY
 
-// implements a pool for a specific prefab
-// used by PoolManager
+#pragma warning disable 0649
 public class Pool
 {
     GameObject prefab;
-    Transform parent;
+    Transform defaultParent;
 
     public Pool(GameObject prefab, Transform parent)
     {
         this.prefab = prefab;
-        this.parent = parent;
+        this.defaultParent = parent;
     }
 
     // Note: msdn documentation claims Lists use an array internally and should perform just as fast
@@ -30,7 +30,7 @@ public class Pool
         {
             lastIndex = (lastIndex + 1) % pool.Count;
             if (pool[lastIndex] == null)
-                return pool[lastIndex] = GameObject.Instantiate(prefab, position, Quaternion.identity, parent);
+                return pool[lastIndex] = GameObject.Instantiate(prefab, position, Quaternion.identity, defaultParent);
             if (!pool[lastIndex].activeSelf)
             {
                 o = pool[lastIndex];
@@ -39,11 +39,32 @@ public class Pool
                 return o;
             }
         }
-        o = GameObject.Instantiate(prefab, position, Quaternion.identity, parent);
+        o = GameObject.Instantiate(prefab, position, Quaternion.identity, defaultParent);
         pool.Add(o);
         return o;
     }
 
+    // Get and set specified parent
+    public GameObject Get(Transform parent)
+    {
+        GameObject o;
+        //Debug.Log($"pool: {pool}");
+        for (int count = pool.Count; count-- > 0;)
+        {
+            lastIndex = (lastIndex + 1) % pool.Count;
+            if (!pool[lastIndex].activeSelf)
+            {
+                o = pool[lastIndex];
+                o.transform.parent = parent;
+                o.SetActive(true);
+                return o;
+            }
+        }
+        o = GameObject.Instantiate(prefab, parent);
+        pool.Add(o);
+        return o;
+    }
+    /*
     public GameObject Get(Transform newTransform)
     {
         GameObject o;
@@ -64,5 +85,6 @@ public class Pool
         pool.Add(o);
         return o;
     }
+    */
 
 }
