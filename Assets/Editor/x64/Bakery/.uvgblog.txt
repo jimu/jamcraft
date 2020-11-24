@@ -1196,3 +1196,237 @@ Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/BVlevel0_LMA
 Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/BVlevel0_LMA5_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/BVlevel0_LMA5_final.hdr"
 Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/BVlevel0_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/BVlevel0_LM0_final.hdr"
 Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/BVlevel0_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/BVlevel0_LMA1_final.hdr"
+2020-11-24
+Rendering UV GBuffer for level03_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level03_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level03_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level03_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level03_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level03_LMA1.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level03_LMA3.lz4" 2 0 3 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level03_LMA4.lz4" 2 0 4 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level03_LMA2.lz4" 2 0 2 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level03_LM0.lz4" 2 0 0 0
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_1" 4 0 1 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1" 4 0 1 comp_1.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_3" 4 0 3 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3" 4 0 3 comp_3.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_4" 4 0 4 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4" 4 0 4 comp_4.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_2" 4 0 2 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2" 4 0 2 comp_2.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_0" 4 0 0 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1_diffuse" 4 16 1 "gi_level03_LMA10.bin" "level03_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3_diffuse" 4 16 3 "gi_level03_LMA30.bin" "level03_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4_diffuse" 4 16 4 "gi_level03_LMA40.bin" "level03_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2_diffuse" 4 16 2 "gi_level03_LMA20.bin" "level03_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0_diffuse" 4 16 0 "gi_level03_LM00.bin" "level03_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1_diffuse" 4 16 1 "gi_level03_LMA11.bin" "level03_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3_diffuse" 4 16 3 "gi_level03_LMA31.bin" "level03_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4_diffuse" 4 16 4 "gi_level03_LMA41.bin" "level03_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2_diffuse" 4 16 2 "gi_level03_LMA21.bin" "level03_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0_diffuse" 4 16 0 "gi_level03_LM01.bin" "level03_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1_diffuse" 4 16 1 "gi_level03_LMA12.bin" "level03_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3_diffuse" 4 16 3 "gi_level03_LMA32.bin" "level03_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4_diffuse" 4 16 4 "gi_level03_LMA42.bin" "level03_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2_diffuse" 4 16 2 "gi_level03_LMA22.bin" "level03_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0_diffuse" 4 16 0 "gi_level03_LM02.bin" "level03_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1_diffuse" 4 16 1 "gi_level03_LMA13.bin" "level03_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3_diffuse" 4 16 3 "gi_level03_LMA33.bin" "level03_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4_diffuse" 4 16 4 "gi_level03_LMA43.bin" "level03_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2_diffuse" 4 16 2 "gi_level03_LMA23.bin" "level03_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0_diffuse" 4 16 0 "gi_level03_LM03.bin" "level03_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA1_final" 4 16 1 "gi_level03_LMA14.bin" "level03_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA3_final" 4 16 3 "gi_level03_LMA34.bin" "level03_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA4_final" 4 16 4 "gi_level03_LMA44.bin" "level03_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LMA2_final" 4 16 2 "gi_level03_LMA24.bin" "level03_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level03_LM0_final" 4 16 0 "gi_level03_LM04.bin" "level03_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level03_LMA1_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA3_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA3_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "3" "level03_LMA3_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA4_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA4_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "4" "level03_LMA4_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level03_LMA2_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level03_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level03_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA3_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level03_LMA3_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA4_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level03_LMA4_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level03_LMA2_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level03_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level03_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level02_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA5 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA6 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level02_LMA7 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA2.lz4" 2 0 2 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA5.lz4" 2 0 5 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA3.lz4" 2 0 3 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA4.lz4" 2 0 4 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA6.lz4" 2 0 6 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA7.lz4" 2 0 7 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level02_LMA1.lz4" 2 0 1 0
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_2" 4 0 2 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2" 4 0 2 comp_2.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_5" 4 0 5 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5" 4 0 5 comp_5.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_3" 4 0 3 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3" 4 0 3 comp_3.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_4" 4 0 4 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4" 4 0 4 comp_4.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_6" 4 0 6 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6" 4 0 6 comp_6.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_7" 4 0 7 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7" 4 0 7 comp_7.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_0" 4 0 0 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0" 4 0 0 comp_0.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-600956686_1" 4 0 1 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2_diffuse" 4 16 2 "gi_level02_LMA20.bin" "level02_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5_diffuse" 4 16 5 "gi_level02_LMA50.bin" "level02_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3_diffuse" 4 16 3 "gi_level02_LMA30.bin" "level02_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4_diffuse" 4 16 4 "gi_level02_LMA40.bin" "level02_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6_diffuse" 4 16 6 "gi_level02_LMA60.bin" "level02_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7_diffuse" 4 16 7 "gi_level02_LMA70.bin" "level02_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0_diffuse" 4 16 0 "gi_level02_LM00.bin" "level02_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1_diffuse" 4 16 1 "gi_level02_LMA10.bin" "level02_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2_diffuse" 4 16 2 "gi_level02_LMA21.bin" "level02_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5_diffuse" 4 16 5 "gi_level02_LMA51.bin" "level02_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3_diffuse" 4 16 3 "gi_level02_LMA31.bin" "level02_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4_diffuse" 4 16 4 "gi_level02_LMA41.bin" "level02_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6_diffuse" 4 16 6 "gi_level02_LMA61.bin" "level02_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7_diffuse" 4 16 7 "gi_level02_LMA71.bin" "level02_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0_diffuse" 4 16 0 "gi_level02_LM01.bin" "level02_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1_diffuse" 4 16 1 "gi_level02_LMA11.bin" "level02_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2_diffuse" 4 16 2 "gi_level02_LMA22.bin" "level02_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5_diffuse" 4 16 5 "gi_level02_LMA52.bin" "level02_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3_diffuse" 4 16 3 "gi_level02_LMA32.bin" "level02_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4_diffuse" 4 16 4 "gi_level02_LMA42.bin" "level02_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6_diffuse" 4 16 6 "gi_level02_LMA62.bin" "level02_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7_diffuse" 4 16 7 "gi_level02_LMA72.bin" "level02_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0_diffuse" 4 16 0 "gi_level02_LM02.bin" "level02_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1_diffuse" 4 16 1 "gi_level02_LMA12.bin" "level02_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2_diffuse" 4 16 2 "gi_level02_LMA23.bin" "level02_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5_diffuse" 4 16 5 "gi_level02_LMA53.bin" "level02_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3_diffuse" 4 16 3 "gi_level02_LMA33.bin" "level02_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4_diffuse" 4 16 4 "gi_level02_LMA43.bin" "level02_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6_diffuse" 4 16 6 "gi_level02_LMA63.bin" "level02_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7_diffuse" 4 16 7 "gi_level02_LMA73.bin" "level02_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0_diffuse" 4 16 0 "gi_level02_LM03.bin" "level02_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1_diffuse" 4 16 1 "gi_level02_LMA13.bin" "level02_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA2_final" 4 16 2 "gi_level02_LMA24.bin" "level02_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA5_final" 4 16 5 "gi_level02_LMA54.bin" "level02_LMA5_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA3_final" 4 16 3 "gi_level02_LMA34.bin" "level02_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA4_final" 4 16 4 "gi_level02_LMA44.bin" "level02_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA6_final" 4 16 6 "gi_level02_LMA64.bin" "level02_LMA6_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA7_final" 4 16 7 "gi_level02_LMA74.bin" "level02_LMA7_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LM0_final" 4 16 0 "gi_level02_LM04.bin" "level02_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level02_LMA1_final" 4 16 1 "gi_level02_LMA14.bin" "level02_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA2_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level02_LMA2_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA5_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA5_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "5" "level02_LMA5_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA3_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "3" "level02_LMA3_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA4_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA4_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "4" "level02_LMA4_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA6_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA6_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "6" "level02_LMA6_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA7_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA7_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "7" "level02_LMA7_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level02_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA1_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level02_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA2_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA5_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA5_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA3_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA3_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA4_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA4_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA6_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA6_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA7_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA7_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA1_final.hdr"
+[usbmuxd] Stop listen thread
+[usbmuxd] Listen thread exiting
