@@ -7,8 +7,8 @@ public class ProjectileBase : MonoBehaviour {
     public float speed;
     public float distance;
     private PlayerBase owner;
-    public int damage;
-
+    public int damage = 1;
+     
     // Component References
     private Rigidbody rb;
 
@@ -20,7 +20,8 @@ public class ProjectileBase : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        distance -= Time.deltaTime * speed;
+        if(distance <= 0f) Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision) {

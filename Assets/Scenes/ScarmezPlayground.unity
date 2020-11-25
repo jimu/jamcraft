@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.2784314, g: 0.54901963, b: 0.7176471, a: 1}
   m_AmbientGroundColor: {r: 0.35686275, g: 0.047058824, b: 0.05882353, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 1
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.2627451, g: 0.37254903, b: 0.65882355, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 617d9be015db68348a623b01ea51a8c5, type: 2}
   m_HaloStrength: 0.5
@@ -1199,6 +1199,7 @@ MonoBehaviour:
     type: 3}
   cam: {fileID: 0}
   rallyPoint: {fileID: 1467387024}
+  selectedBots: []
 --- !u!4 &1637204708
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class PlayerController : PlayerBase {
     public Camera cam;
     public GameObject rallyPoint;
 
+    public List<BotController> selectedBots = new List<BotController>();
 
     // Start is called before the first frame update
     void Start() {
@@ -21,6 +22,12 @@ public class PlayerController : PlayerBase {
 
         // Left click to rappy bots
         if(Input.GetMouseButtonDown(0)) {
+
+
+
+        }
+
+        if(Input.GetKeyDown("r")) {
             RallyBots();
         }
 
