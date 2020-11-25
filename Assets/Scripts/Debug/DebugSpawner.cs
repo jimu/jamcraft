@@ -59,5 +59,4 @@ public class DebugSpawner : MonoBehaviour
             agent.angularSpeed = chassisData.turnSpeed;
         }
     }
-
 }
