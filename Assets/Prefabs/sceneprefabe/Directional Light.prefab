@@ -10,12 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3263141285068612759}
   - component: {fileID: 3263141285068612760}
+  - component: {fileID: 3263141285772362945}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3263141285068612759
 Transform:
@@ -42,7 +43,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -82,7 +83,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -92,3 +93,30 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &3263141285772362945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263141285068612761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74ce2158ae608549902afb4112fd042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
+  intensity: 1
+  shadowSpread: 0.01
+  samples: 16
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 1
+  shadowmaskDenoise: 1
+  indirectIntensity: 1
+  cloudShadow: {fileID: 0}
+  cloudShadowTilingX: 0.01
+  cloudShadowTilingY: 0.01
+  cloudShadowOffsetX: 0
+  cloudShadowOffsetY: 0
+  UID: -1811798187

@@ -3,7 +3,12 @@ guid: 1ff9a40970357774c9eba6566c37b45a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TRANS-YELLOW
+    second: {fileID: 2100000, guid: 839c90f7be935d84393c06a1404876cc, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

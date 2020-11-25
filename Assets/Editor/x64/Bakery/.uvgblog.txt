@@ -1430,3 +1430,1108 @@ Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LM0_
 Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level02_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level02_LMA1_final.hdr"
 [usbmuxd] Stop listen thread
 [usbmuxd] Listen thread exiting
+2020-11-26
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-611314673_0" 4 0 0 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1947316854_0" 4 0 0 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1947316854_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1947316854_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1947316854_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-158070136_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-332963835_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_458159308_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-429855098_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 4 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1077345671_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 4 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1369920672_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1256202427_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1320656008_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1392697890_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-313674344_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_0" 4 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_1" 4 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_2" 4 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_0_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_0_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_1_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_1_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_2_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_2_Mask.lz4" 1024
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1811798187_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_0_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_0_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_1_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_1_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_2_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1811798187_2_Mask.lz4" 1024
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1526711263_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1526711263_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1526711263_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_0_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_0_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_1_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_1_Mask.lz4" 2048
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running denoiseMask "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_2_Mask.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/light_-1526711263_2_Mask.lz4" 1024
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level01_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level01_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level01_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level01_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level01_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level01_LMA5 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LMA1.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LMA3.lz4" 2 0 3 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LMA2.lz4" 2 0 2 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LMA5.lz4" 2 0 5 0
+Running ftrace fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level01_LMA4.lz4" 2 0 4 0
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_1" 4 0 1 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1" 4 0 1 comp_1.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_3" 4 0 3 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3" 4 0 3 comp_3.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_2" 4 0 2 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2" 4 0 2 comp_2.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_0" 4 0 0 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0" 4 0 0 comp_0.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_5" 4 0 5 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5" 4 0 5 comp_5.bin
+Running ftrace sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_4" 4 0 4 direct0.bin
+Running ftrace addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4" 4 0 4 comp_4.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1_diffuse" 4 16 1 "gi_level01_LMA10.bin" "level01_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3_diffuse" 4 16 3 "gi_level01_LMA30.bin" "level01_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2_diffuse" 4 16 2 "gi_level01_LMA20.bin" "level01_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0_diffuse" 4 16 0 "gi_level01_LM00.bin" "level01_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5_diffuse" 4 16 5 "gi_level01_LMA50.bin" "level01_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4_diffuse" 4 16 4 "gi_level01_LMA40.bin" "level01_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1_diffuse" 4 16 1 "gi_level01_LMA11.bin" "level01_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3_diffuse" 4 16 3 "gi_level01_LMA31.bin" "level01_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2_diffuse" 4 16 2 "gi_level01_LMA21.bin" "level01_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0_diffuse" 4 16 0 "gi_level01_LM01.bin" "level01_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5_diffuse" 4 16 5 "gi_level01_LMA51.bin" "level01_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4_diffuse" 4 16 4 "gi_level01_LMA41.bin" "level01_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1_diffuse" 4 16 1 "gi_level01_LMA12.bin" "level01_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3_diffuse" 4 16 3 "gi_level01_LMA32.bin" "level01_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2_diffuse" 4 16 2 "gi_level01_LMA22.bin" "level01_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0_diffuse" 4 16 0 "gi_level01_LM02.bin" "level01_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5_diffuse" 4 16 5 "gi_level01_LMA52.bin" "level01_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4_diffuse" 4 16 4 "gi_level01_LMA42.bin" "level01_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1_diffuse" 4 16 1 "gi_level01_LMA13.bin" "level01_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3_diffuse" 4 16 3 "gi_level01_LMA33.bin" "level01_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2_diffuse" 4 16 2 "gi_level01_LMA23.bin" "level01_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0_diffuse" 4 16 0 "gi_level01_LM03.bin" "level01_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5_diffuse" 4 16 5 "gi_level01_LMA53.bin" "level01_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4_diffuse" 4 16 4 "gi_level01_LMA43.bin" "level01_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA1_final" 4 16 1 "gi_level01_LMA14.bin" "level01_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA3_final" 4 16 3 "gi_level01_LMA34.bin" "level01_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA2_final" 4 16 2 "gi_level01_LMA24.bin" "level01_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LM0_final" 4 16 0 "gi_level01_LM04.bin" "level01_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA5_final" 4 16 5 "gi_level01_LMA54.bin" "level01_LMA5_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level01_LMA4_final" 4 16 4 "gi_level01_LMA44.bin" "level01_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level01_LMA1_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA3_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA3_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "3" "level01_LMA3_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA2_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level01_LMA2_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level01_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA5_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA5_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "5" "level01_LMA5_final_HDR.lz4"
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA4_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA4_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "4" "level01_LMA4_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA3_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LMA3_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LMA2_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA5_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LMA5_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level01_LMA4_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level01_LMA4_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_-1326806613_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/BakeryLightmaps/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA3.lz4" 2 0 3 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_ao" 8 16 3
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_3" 12 0 3 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3" 4 0 3 comp_3.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA30.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA31.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA32.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA33.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final" 20 16 3 "gi_level_lanes_LMA34.bin" "level_lanes_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final_HDR.lz4" 4 0 3 comp_indirect3.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA3_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_3.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final_HDR.lz4" 4 0 3 addao_3.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "3" "level_lanes_LMA3_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA3_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for level_lanes_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for level_lanes_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA2.lz4" 2 0 2 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA3.lz4" 2 0 3 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "uvpos_level_lanes_LM0.lz4" 2 0 0 0
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_ao" 8 16 2
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_ao" 8 16 3
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_ao" 8 16 1
+Running ftraceRTX ao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_ao" 8 16 0
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_2" 12 0 2 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_3" 12 0 3 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3" 4 0 3 comp_3.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_1" 12 0 1 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX sun "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "light_1367331455_0" 12 0 0 direct0.bin
+Running ftraceRTX addmul "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA20.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA30.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA10.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM00.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA21.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA31.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA11.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM01.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA22.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA32.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA12.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM02.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_diffuse" 4 16 2 "gi_level_lanes_LMA23.bin" "level_lanes_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_diffuse" 4 16 3 "gi_level_lanes_LMA33.bin" "level_lanes_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_diffuse" 4 16 1 "gi_level_lanes_LMA13.bin" "level_lanes_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_diffuse" 4 16 0 "gi_level_lanes_LM03.bin" "level_lanes_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final" 20 16 2 "gi_level_lanes_LMA24.bin" "level_lanes_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final" 20 16 3 "gi_level_lanes_LMA34.bin" "level_lanes_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final" 20 16 1 "gi_level_lanes_LMA14.bin" "level_lanes_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final" 20 16 0 "gi_level_lanes_LM04.bin" "level_lanes_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 comp_indirect2.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final_HDR.lz4" 4 0 3 comp_indirect3.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 comp_indirect1.bin
+Running ftraceRTX add "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 comp_indirect0.bin
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_2.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA2_final_HDR.lz4" 4 0 2 addao_2.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "2" "level_lanes_LMA2_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA3_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_3.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA3_final_HDR.lz4" 4 0 3 addao_3.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "3" "level_lanes_LMA3_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_1.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LMA1_final_HDR.lz4" 4 0 1 addao_1.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "1" "level_lanes_LMA1_final_HDR.lz4"
+Running combineMasks "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_mask.tga" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/masks_0.bin" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/"
+Running ftraceRTX addao "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "level_lanes_LM0_final_HDR.lz4" 4 0 0 addao_0.bin
+Running denoiser "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\BUNNYV~1\AppData\Local\Temp\frender" "0" "level_lanes_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA2_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA2_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA3_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA3_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LMA1_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\BUNNYV~1\AppData\Local\Temp\frender/level_lanes_LM0_final_HDR.lz4" "D:/unity_projects/jamcraft/Assets/Scenes/level_lanes/level_lanes_LM0_final.hdr"
+[usbmuxd] Stop listen thread
+[usbmuxd] Listen thread exiting
