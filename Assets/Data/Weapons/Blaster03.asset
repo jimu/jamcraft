@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blaster03
   m_EditorClassIdentifier: 
   weaponName: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 7406123081810790727, guid: 9632929f13d0bf34682aae96bc2b61eb, type: 3}
   projectile: {fileID: 0}
   fireRate: 0
   fireVFX: {fileID: 0}

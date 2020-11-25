@@ -12,6 +12,7 @@ public class InventorySlot : MonoBehaviour {
     public void SetItem(ItemData item, int qty) {
         itemData = item;
         itemIcon.sprite = item.itemIcon;
+        itemIcon.color = new Color(1, 1, 1, 1);
         if(qty >= 0 && qty <= 1) {
             itemQTY.text = "";
         } else {
@@ -23,6 +24,7 @@ public class InventorySlot : MonoBehaviour {
         itemData = null;
         itemIcon.sprite = null;
         itemQTY.text = "";
+        itemIcon.color = new Color(0, 0, 0, 0);
     }
 
 

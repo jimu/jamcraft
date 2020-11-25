@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Armour01
   m_EditorClassIdentifier: 
   armourName: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 5974292212019544373, guid: 879a12927bd22014b89935987f65b489, type: 3}
   damageReduction: 0
   recipe:
     redBricks: 0
