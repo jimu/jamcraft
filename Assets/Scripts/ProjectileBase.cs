@@ -25,18 +25,14 @@ public class ProjectileBase : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision collision) {
-        Debug.Log("Collison detected");
-        switch(collision.transform.tag) {
 
-            case "Terrain":
-                Destroy(gameObject);
-                break;
-            case "Enemy":
-                BotController bot = collision.transform.GetComponent<BotController>();
-                bot.Damage(damage);
-                Destroy(gameObject);
-                break;
+        Damageable damageable = collision.transform.GetComponent<Damageable>();
+
+        if(damageable != null) {
+            damageable.Damage(damage);
         }
+
+        Destroy(gameObject);
 
     }
 

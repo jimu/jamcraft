@@ -7,6 +7,9 @@ public class CPUController : PlayerBase {
     public float enemySpawnRate = 30f;
     private float enemySpawnTimer = 0f;
 
+    [SerializeField]
+    public List<NavNode> startNodes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,7 @@ public class CPUController : PlayerBase {
             BotController lastBot = Instantiate(defaultBotPrefab, homeBase.transform.position + (homeBase.transform.forward * 8), homeBase.transform.rotation, null).GetComponent<BotController>();
             bots.Add(lastBot);
             lastBot.Initialize();
-            lastBot.SetRally(opponent.homeBase.transform.position);
+            lastBot.SetRally(startNodes[Random.Range(0, startNodes.Count)].GetRandomPointInNode());
             lastBot.owner = this;
 
         }
