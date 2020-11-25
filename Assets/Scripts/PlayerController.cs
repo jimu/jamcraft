@@ -6,9 +6,8 @@ using UnityEngine;
 public class PlayerController : PlayerBase {
 
     public Camera cam;
-    public GameObject rallyPoint;
+    //public GameObject rallyPoint;
 
-    public List<BotController> selectedBots = new List<BotController>();
 
     // Start is called before the first frame update
     void Start() {
@@ -27,40 +26,37 @@ public class PlayerController : PlayerBase {
 
         }
 
-        if(Input.GetKeyDown("r")) {
-            RallyBots();
-        }
 
         // testing building a bot
         if(Input.GetKeyDown("1")) {
             BotController lastBot = Instantiate(defaultBotPrefab, homeBase.transform.position + (homeBase.transform.forward * 8), homeBase.transform.rotation, null).GetComponent<BotController>();
             bots.Add(lastBot);
             lastBot.Initialize();
-            lastBot.SetRally(GetRallyPoint());
+            //lastBot.SetRally(GetRallyPoint());
             lastBot.owner = this;
         }
 
     }
 
-    public Vector3 GetRallyPoint() {
-        return rallyPoint.transform.position;
-    }
+//    public Vector3 GetRallyPoint() {
+//        return rallyPoint.transform.position;
+//    }
 
-    public void RallyBots() {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if(Physics.Raycast(ray, out hit)) {
-
-            if(hit.collider.tag == "Ground") {
-
-                rallyPoint.transform.position = hit.point;
-
-                foreach(BotController bot in bots) {
-                    bot.SetRally(hit.point);
-                }
-            }
-        }
-    }
+//    public void RallyBots() {
+//        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+//        RaycastHit hit;
+//
+//        if(Physics.Raycast(ray, out hit)) {
+//
+//            if(hit.collider.tag == "Ground") {
+//
+//                rallyPoint.transform.position = hit.point;
+//
+//                foreach(BotController bot in bots) {
+//                    bot.SetRally(hit.point);
+//                }
+//            }
+//        }
+//    }
 
 }

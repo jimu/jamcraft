@@ -144,6 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb043e9f847ec64d9abae93f64f3e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alignment: 0
+  maxHealth: 20
   owner: {fileID: 0}
   radius: 2
   projectilePoint: {fileID: 2514811658289400199}
