@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2688e1b6c1b2e2a42908caadd9c7f08e, type: 3}
+  m_Name: Shell2
+  m_EditorClassIdentifier: 
+  projectileName: Cannon Shell Level 1
+  prefab: {fileID: 8037231264084636105, guid: 3af4bfec8b7f648799fc51246a995e02, type: 3}
+  impactVFX: {fileID: 0}
+  impactSFX: {fileID: 8300000, guid: 3dc8c20926634b1489ee5b716ff91a4f, type: 3}
+  damage: 2

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c9e81bd0e18db84c90ee035019ff835, type: 3}
-  m_Name: RedBrick
+  m_Name: Blue1x1
   m_EditorClassIdentifier: 
-  itemName: Red Brick
-  itemIcon: {fileID: 21300000, guid: 7dc9cf904df2045cc9cbb2449bc26268, type: 3}
+  itemName: Blue 1x1
+  itemIcon: {fileID: 21300000, guid: 3ccb95cf5e953ba448f47bca977c3bad, type: 3}
   itemStackSize: 64

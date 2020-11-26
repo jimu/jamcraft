@@ -19,7 +19,5 @@ MonoBehaviour:
   fireVFX: {fileID: 0}
   fireSFX: {fileID: 8300000, guid: a01779440aac89a4fb46224b6b90c2a0, type: 3}
   recipe:
-    redBricks: 1
-    blueBricks: 0
-    greenBricks: 0
-    yellowBricks: 0
+    ingredients:
+    - {fileID: 11400000, guid: a26d21877352e3a4a97b5d3fa81d4079, type: 2}

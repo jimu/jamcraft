@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Armour", menuName = "Jamcraft/Armour")]
-public class ArmourData : ScriptableObject {
+public class ArmourData : CraftableData
+{
+    [Header("Armour Specification")]
+
     [Tooltip("Armour name")]
     public string armourName;
 
@@ -13,7 +16,4 @@ public class ArmourData : ScriptableObject {
 
     [Tooltip("Armour Provided")]
     public float damageReduction;
-
-    [Tooltip("Purchase Cost")]
-    public Recipe recipe;
 }

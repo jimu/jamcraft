@@ -3,19 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class Recipe
-{
-    public int redBricks;
-    public int blueBricks;
-    public int greenBricks;
-    public int yellowBricks;
-}
 
 
 [CreateAssetMenu(fileName = "New Weapon", menuName = "Jamcraft/Weapon")]
-public class WeaponData : ScriptableObject
+public class WeaponData : CraftableData
 {
+    [Header("Weapon Specification")]
+
     [Tooltip("Weapon name")]
     public string weaponName;
 
@@ -33,9 +27,6 @@ public class WeaponData : ScriptableObject
 
     [Tooltip("Sound Effect when fired")]
     public AudioClip fireSFX;
-
-    [Tooltip("Recipe")]
-    public Recipe recipe;
 
     //[Tooltip("TBD Cost to upgrade this weapon")]
     //public int upgradeCost;
