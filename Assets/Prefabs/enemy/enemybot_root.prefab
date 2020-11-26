@@ -18688,12 +18688,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alignment: 1
   maxHealth: 20
+  currentHealth: 0
   owner: {fileID: 0}
   radius: 2
   projectilePoint: {fileID: 7225654765480132997}
   projectilePrefab: {fileID: 8037231264084636105, guid: db22fe05f41237547b3b0d3bd5d40378,
     type: 3}
-  range: 28
+  range: 20
   attackRate: 0.2
 --- !u!1 &4069848344853993740
 GameObject:

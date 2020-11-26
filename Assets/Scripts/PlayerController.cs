@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : PlayerBase {
 
-    public Camera cam;
+    private Camera cam;
     //public GameObject rallyPoint;
 
 

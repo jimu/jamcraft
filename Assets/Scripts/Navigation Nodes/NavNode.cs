@@ -9,7 +9,7 @@ public class NavNode : MonoBehaviour {
     public NavNode nextNodeTowardCPU;
 
     private void Start() {
-        Debug.Log(GetRandomPointInNode());
+        
     }
 
     public Vector3 GetRandomPointInNode() {
@@ -28,9 +28,17 @@ public class NavNode : MonoBehaviour {
         var bot = other.gameObject.GetComponent<BotController>();
         if(bot != null) {
             if(bot.alignment == BotController.Alignment.CPU) {
-                bot.SetRally(nextNodeTowardPlayer.GetRandomPointInNode());
+                if(nextNodeTowardPlayer == null) {
+                    bot.SetRally(bot.owner.opponent.homeBase.transform.position);
+                } else {
+                    bot.SetRally(nextNodeTowardPlayer.GetRandomPointInNode());
+                }
             } else {
-                bot.SetRally(nextNodeTowardPlayer.GetRandomPointInNode());
+                if(nextNodeTowardCPU == null) {
+                    bot.SetRally(bot.owner.opponent.homeBase.transform.position);
+                } else {
+                    bot.SetRally(nextNodeTowardCPU.GetRandomPointInNode());
+                }
             }
         }
     }

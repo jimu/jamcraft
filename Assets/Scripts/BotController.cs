@@ -7,7 +7,7 @@ public class BotController : Damageable {
 
     public PlayerBase owner;
     private NavMeshAgent navAgent;
-    private Vector3 rallyPoint;
+    public Vector3 rallyPoint;
     public float radius = 2f;
 
     [Header("Combat")]
