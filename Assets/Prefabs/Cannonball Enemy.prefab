@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 378907901748571784}
   - component: {fileID: 3671559477411651688}
   - component: {fileID: 6103257095395828311}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Cannonball Enemy
   m_TagString: Projectile-Enemy
   m_Icon: {fileID: 0}
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   distance: 60
+  damage: 1
 --- !u!1001 &2594097903114103182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: projectile_red
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586758141356194579, guid: f000d2b0a9030d84590033ea0eaed41c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f000d2b0a9030d84590033ea0eaed41c, type: 3}
