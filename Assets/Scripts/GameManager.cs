@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoSingleton<GameManager> {
 
+    [Header("Camera")]
+    public Transform cameraTransform;
+
     [Header("Players")]
     public PlayerController player;
     public CPUController enemy;
