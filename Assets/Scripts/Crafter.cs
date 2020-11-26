@@ -189,6 +189,8 @@ public class Crafter : MonoSingleton<Crafter>
         ChassisData chassisData = chassis.Data as ChassisData;
 
         GameObject bot = PoolManager.Instance.Get(chassisData.prefab, Vector3.zero);
+        Bot botData = bot.AddComponent<Bot>();
+        botData.chassis = chassisData;
 
         if (chassisData.weaponHardpoint != "" && weapon1 != null)
         {
@@ -198,6 +200,7 @@ public class Crafter : MonoSingleton<Crafter>
             if (weaponData.fireRate > 0)
                 pivot.gameObject.AddComponent<DebugTurretRotator>();
             DestroyImmediate(weapon1.gameObject);
+            botData.weapon1 = weaponData;
         }
         if (chassisData.weaponHardpoint2 != "" && weapon2 != null)
         {
@@ -207,13 +210,15 @@ public class Crafter : MonoSingleton<Crafter>
             if (weaponData.fireRate > 0)
                 pivot.gameObject.AddComponent<DebugTurretRotator>();
             DestroyImmediate(weapon2.gameObject);
+            botData.weapon2 = weaponData;
         }
         if (chassisData.armourHardpoint != "" && armour != null)
         {
-            WeaponData armourData = armour.Data as WeaponData;
+            ArmourData armourData = armour.Data as ArmourData;
             Transform pivot = bot.transform.Find(chassisData.armourHardpoint);
             PoolManager.Instance.Get(armourData.prefab, pivot);
             DestroyImmediate(armour.gameObject);
+            botData.armour = armourData;
         }
 
         DestroyImmediate(chassis.gameObject);
