@@ -23,4 +23,8 @@ public class Damageable : MonoBehaviour {
         currentHealth -= damage;
     }
 
+    public float GetNormalizedHealth() {
+        return currentHealth / maxHealth;
+    }
+
 }
