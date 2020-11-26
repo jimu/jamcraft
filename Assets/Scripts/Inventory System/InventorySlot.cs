@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+#pragma warning disable 649
+
 public class InventorySlot : MonoBehaviour {
 
     ItemData itemData;
