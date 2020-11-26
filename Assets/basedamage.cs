@@ -8,11 +8,13 @@ public class basedamage : MonoBehaviour
     public ParticleSystem ps2;
     public ParticleSystem ps3;
     public int currentHealth;
+    // nonExplosive objects are the ones the LEGO explosive brick won't destroy because they're parented elsewhere or aren't LEGO
     public GameObject nonExplosive;
 
     // Start is called before the first frame update
     void Start()
     {
+        //pause the particle systems and set current base health for testing
         ps1.Pause();
         ps2.Pause();
         ps3.Pause();
