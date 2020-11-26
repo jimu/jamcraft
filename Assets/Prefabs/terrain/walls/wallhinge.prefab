@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2277745003812879406}
   - component: {fileID: 2896930109822923659}
   - component: {fileID: 1141383092098828097}
+  - component: {fileID: 1016016433628956259}
   m_Layer: 0
   m_Name: wallhinge
   m_TagString: Untagged
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1016016433628956259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501947932228691604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6163564, y: 8.79, z: 6.016369}
+  m_Center: {x: 1.0131798, y: 4.4, z: 0.18681908}
