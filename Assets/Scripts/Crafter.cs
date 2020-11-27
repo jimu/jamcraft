@@ -22,7 +22,7 @@ public class Crafter : MonoSingleton<Crafter>
 
     [Tooltip("List of bot components that this crafter can make")]
     [SerializeField] CraftableCatalogData catalogData;
-    [SerializeField] CraftableData botPlaceholderData;
+    [SerializeField] CraftableData botOutputPlaceholderData;
 
     public Action<GameObject> onNewBot;
 
@@ -71,7 +71,7 @@ public class Crafter : MonoSingleton<Crafter>
                 return SetOutput(o);
         }
 
-        return SetOutput(CanConstructBot() ? botPlaceholderData : null);
+        return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
     }
     
 
@@ -99,7 +99,7 @@ public class Crafter : MonoSingleton<Crafter>
     {
         Debug.Log($"I'm going to craft a {craftOutput.name} ({craftOutput.description})");
 
-        if (craftOutput == botPlaceholderData)
+        if (craftOutput == botOutputPlaceholderData)
         {
             ConstructBot();
             return;
