@@ -22,7 +22,7 @@ public class Pool
     List<GameObject> pool = new List<GameObject>();
     int lastIndex = -1;
 
-    public GameObject Get(Vector3 position)
+    public GameObject Get(Vector3 position, Quaternion rotation)
     {
         GameObject o;
         //Debug.Log($"pool: {pool}");
@@ -30,7 +30,7 @@ public class Pool
         {
             lastIndex = (lastIndex + 1) % pool.Count;
             if (pool[lastIndex] == null)
-                return pool[lastIndex] = GameObject.Instantiate(prefab, position, Quaternion.identity, defaultParent);
+                return pool[lastIndex] = GameObject.Instantiate(prefab, position, rotation, defaultParent);
             if (!pool[lastIndex].activeSelf)
             {
                 o = pool[lastIndex];
@@ -39,9 +39,14 @@ public class Pool
                 return o;
             }
         }
-        o = GameObject.Instantiate(prefab, position, Quaternion.identity, defaultParent);
+        o = GameObject.Instantiate(prefab, position, rotation, defaultParent);
         pool.Add(o);
         return o;
+    }
+
+    public GameObject Get(Vector3 position)
+    {
+        return Get(position, Quaternion.identity);
     }
 
     // Get and set specified parent

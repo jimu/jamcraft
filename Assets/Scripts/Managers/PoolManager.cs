@@ -20,6 +20,10 @@ public class PoolManager : MonoSingleton<PoolManager>
     {
         return GetPool(prefab).Get(position);
     }
+    public GameObject Get(GameObject prefab, Vector3 position, Quaternion rotation)
+    {
+        return GetPool(prefab).Get(position, rotation);
+    }
     public GameObject Get(GameObject prefab, Transform parent)
     {
         return GetPool(prefab).Get(parent);

@@ -9,6 +9,9 @@ using UnityEngine;
  * A NavPath only knows about it's children
  * 
  */
+
+#pragma warning disable 649
+
 public class NavPath : MonoBehaviour
 {
     [SerializeField] bool loop;

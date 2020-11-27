@@ -19663,12 +19663,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb043e9f847ec64d9abae93f64f3e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alignment: 0
+  maxHealth: 100
+  currentHealth: 0
   owner: {fileID: 0}
+  rallyPoint: {x: 0, y: 0, z: 0}
   radius: 2
   projectilePoint: {fileID: 1439594844870745943}
   projectilePrefab: {fileID: 8037231264084636105, guid: 6d9ee86a01790594aa35724ed294e0d1,
     type: 3}
-  range: 60
+  range: 3
   attackRate: 0.2
 --- !u!1 &9210964641207587429
 GameObject:

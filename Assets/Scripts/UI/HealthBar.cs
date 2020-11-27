@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+#pragma warning disable 649
+
 public class HealthBar : MonoBehaviour {
 
     [SerializeField] Image fillBar;

@@ -965,7 +965,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782809624203658986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.036000013, y: 1.274, z: 4.114}
+  m_LocalPosition: {x: 0.036000013, y: 1.274, z: 4.935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5928683707384999102}
@@ -1615,8 +1615,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6399573880187463521}
+  - component: {fileID: 6745496683541800535}
   m_Layer: 0
-  m_Name: Blaster02 1
+  m_Name: Blaster02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1637,6 +1638,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6745496683541800535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907108056902906582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcec216a1f1d0e4ca05c757c3427d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 3118145316375314951}
+  data: {fileID: 11400000, guid: d26e25fa90929874eb680d3d9ac97d18, type: 2}
 --- !u!1 &2983307294438855946
 GameObject:
   m_ObjectHideFlags: 0

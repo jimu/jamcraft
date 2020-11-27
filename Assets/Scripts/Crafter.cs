@@ -195,14 +195,16 @@ public class Crafter : MonoSingleton<Crafter>
         GameObject bot = PoolManager.Instance.Get(chassisData.prefab, Vector3.zero);
         Bot botData = bot.AddComponent<Bot>();
         botData.chassis = chassisData;
+        botData.owner = GameObject.Find("Player").GetComponent<PlayerBase>(); // TODO HACK
 
         if (chassisData.weaponHardpoint != "" && weapon1 != null)
         {
             WeaponData weaponData = weapon1.Data as WeaponData;
             Transform pivot = bot.transform.Find(chassisData.weaponHardpoint);
-            PoolManager.Instance.Get(weaponData.prefab, pivot);
-            if (weaponData.fireRate > 0)
-                pivot.gameObject.AddComponent<DebugTurretRotator>();
+            GameObject o = PoolManager.Instance.Get(weaponData.prefab, pivot);
+            botData.muzzle1 = o.GetComponent<Weapon>().muzzle;
+            //if (weaponData.fireRate > 0)
+                //pivot.gameObject.AddComponent<DebugTurretRotator>();
             DestroyImmediate(weapon1.gameObject);
             botData.weapon1 = weaponData;
         }
@@ -210,9 +212,11 @@ public class Crafter : MonoSingleton<Crafter>
         {
             WeaponData weaponData = weapon2.Data as WeaponData;
             Transform pivot = bot.transform.Find(chassisData.weaponHardpoint2);
-            PoolManager.Instance.Get(weaponData.prefab, pivot);
-            if (weaponData.fireRate > 0)
-                pivot.gameObject.AddComponent<DebugTurretRotator>();
+            GameObject o = PoolManager.Instance.Get(weaponData.prefab, pivot);
+            botData.muzzle2 = o.transform.Find("firePointA");
+
+            //if (weaponData.fireRate > 0)
+            //pivot.gameObject.AddComponent<DebugTurretRotator>();
             DestroyImmediate(weapon2.gameObject);
             botData.weapon2 = weaponData;
         }
@@ -224,6 +228,9 @@ public class Crafter : MonoSingleton<Crafter>
             DestroyImmediate(armour.gameObject);
             botData.armour = armourData;
         }
+
+        if (botData.weapon1 || botData.weapon2)
+            bot.AddComponent<Targeter>();
 
         DestroyImmediate(chassis.gameObject);
         RefreshOutput();

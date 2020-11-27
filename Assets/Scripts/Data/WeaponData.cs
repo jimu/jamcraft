@@ -22,6 +22,9 @@ public class WeaponData : CraftableData
     [Tooltip("Rounds per second")]
     public float fireRate;
 
+    [Tooltip("Weapon range")]
+    public float range;
+
     [Tooltip("Particle Effect when fired")]
     public ParticleSystem fireVFX;
 

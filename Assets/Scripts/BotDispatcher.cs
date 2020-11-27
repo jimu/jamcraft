@@ -28,6 +28,8 @@ using UnityEngine.AI;
  *   
  * Note: NavPaths set to loop will never end. Bots will patrol them
  */
+
+#pragma warning disable 649
 public class BotDispatcher : MonoBehaviour
 {
     [Tooltip("Dispatch bot from this point (optional).  If origin is not specified, bot will start at begining of navPath")]

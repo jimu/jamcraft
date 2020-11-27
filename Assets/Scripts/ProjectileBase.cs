@@ -22,17 +22,33 @@ public class ProjectileBase : MonoBehaviour {
     void Update() {
         distance -= Time.deltaTime * speed;
         if(distance <= 0f) Destroy(gameObject);
+
+        //if (CompareTag("Projectile-Friendly"))
+        //{
+        //    transform.Translate(speed * Vector3.forward * Time.deltaTime);
+        //}
     }
 
     private void OnCollisionEnter(Collision collision) {
 
         Damageable damageable = collision.transform.GetComponent<Damageable>();
 
-        if(damageable != null) {
+        if(damageable != null &&
+            (damageable.alignment == Damageable.Alignment.PLAYER && CompareTag("Projectile-Enemy") ||
+            damageable.alignment == Damageable.Alignment.CPU && CompareTag("Projectile-Friendly")))
+        {
             damageable.Damage(damage);
+            Debug.Log($" {damageable.name} hit by {name} hits={damageable.currentHealth}/{damageable.maxHealth}");
+
+            if (CompareTag("Projectile-Friendly"))
+            {
+                gameObject.SetActive(false);
+
+            }
+            else
+                Destroy(gameObject);
         }
 
-        Destroy(gameObject);
 
     }
 

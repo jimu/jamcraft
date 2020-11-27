@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+#pragma warning disable 649
 public class BotController : Damageable {
 
     public PlayerBase owner;
