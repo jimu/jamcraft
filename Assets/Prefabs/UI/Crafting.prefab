@@ -8223,7 +8223,8 @@ MonoBehaviour:
   inventoryItemPrefab: {fileID: -6565293317282403788, guid: 84ea9e484dc4a4c4d882627dfdb4b18a,
     type: 3}
   catalogData: {fileID: 11400000, guid: fa969d1edf41f2344b8b89240671c630, type: 2}
-  botPlaceholderData: {fileID: 11400000, guid: 9bd927972ed801741b5885e0d19f152a, type: 2}
+  botOutputPlaceholderData: {fileID: 11400000, guid: 9bd927972ed801741b5885e0d19f152a,
+    type: 2}
 --- !u!1 &8162662433354709314
 GameObject:
   m_ObjectHideFlags: 0

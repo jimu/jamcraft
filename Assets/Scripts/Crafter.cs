@@ -24,7 +24,7 @@ public class Crafter : MonoSingleton<Crafter>
     [SerializeField] CraftableCatalogData catalogData;
     [SerializeField] CraftableData botOutputPlaceholderData;
 
-    public Action<GameObject> onNewBot;
+    public Action<Bot> onNewBot;
 
     // sorted catalog
     List<CraftableData> catalog;
@@ -71,6 +71,7 @@ public class Crafter : MonoSingleton<Crafter>
                 return SetOutput(o);
         }
 
+        Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
         return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
     }
     
@@ -155,7 +156,10 @@ public class Crafter : MonoSingleton<Crafter>
         {
             Debug.Log($"* {item}");
             if (item.Data is ChassisData)
+            {
+                Debug.Log($" * Returning true because {item.Data.name} is ChassisData");
                 return true;
+            }
         }
         return false;
     }
@@ -223,6 +227,6 @@ public class Crafter : MonoSingleton<Crafter>
 
         DestroyImmediate(chassis.gameObject);
         RefreshOutput();
-        onNewBot?.Invoke(bot);
+        onNewBot?.Invoke(botData);
     }
 }

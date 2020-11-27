@@ -19,7 +19,7 @@ public class DebugBotManager : MonoBehaviour
 
     }
 
-    void InitNewBot(GameObject bot)
+    void InitNewBot(Bot bot)
     {
         Debug.Log($"InitNewBot({bot.name})");
         Bot botdata = bot.GetComponent<Bot>();
