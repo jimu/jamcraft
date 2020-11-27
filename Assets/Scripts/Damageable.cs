@@ -38,6 +38,6 @@ public class Damageable : MonoBehaviour {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         if (agent)
             agent.isStopped = true;
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 5);
     }
 }

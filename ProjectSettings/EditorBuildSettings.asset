@@ -12,15 +12,12 @@ EditorBuildSettings:
     path: Assets/LEGO/Scenes/High Scores.unity
     guid: 6cfb1f3a8c3d61b47b9a613641d38f97
   - enabled: 1
-    path: Assets/LEGO/Scenes/Microgame - The Evil Machine.unity
-    guid: 66a08a2144d504052bb8808f5fea43f6
+    path: Assets/Scenes/JimU/Lanes Level Scarmez J1.unity
+    guid: abf064a74722f5644b0de408dc6856d5
   - enabled: 1
     path: Assets/LEGO/Scenes/Menu Win.unity
     guid: 05cfb1c697d1a4d22b5edccf653ebd94
   - enabled: 1
     path: Assets/LEGO/Scenes/Menu Lose.unity
     guid: 23bd42193fd3048b7b6f4dedf8f3317a
-  - enabled: 0
-    path: Assets/Scenes/ScarmezPlayground.unity
-    guid: 5f7c189ddcd7aec4c97282f7b8ace51e
   m_configObjects: {}
