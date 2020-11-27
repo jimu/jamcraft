@@ -12,6 +12,7 @@ TagManager:
   - RallyPoint
   - Enemy
   - Ground
+  - Exploder
   layers:
   - Default
   - TransparentFX

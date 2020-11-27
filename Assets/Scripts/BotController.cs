@@ -36,40 +36,49 @@ public class BotController : Damageable {
 
     void Update() {
 
-        attackTimer -= Time.deltaTime;
+        if (!isDead)
+        {
+            attackTimer -= Time.deltaTime;
 
-        if(currentTarget != null) {
+            if (currentTarget != null)
+            {
 
-            // disengage if it is too far away
-            if(Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range) {
-                currentTarget = null;
-                
-            } else{
+                // disengage if it is too far away
+                if (Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range)
+                {
+                    currentTarget = null;
 
-                navAgent.isStopped = true;
+                }
+                else
+                {
 
-                // Look at the target
-                Vector3 lookPos = currentTarget.transform.position - transform.position;
-                lookPos.y = 0;
-                Quaternion rotation = Quaternion.LookRotation(lookPos);
-                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 2f * Time.deltaTime);
+                    navAgent.isStopped = true;
 
-                // if the target is infront of the bot, shoot.
-                float angle = 8;
-                if(Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle) {
-                    if(attackTimer < 0f) Shoot();
+                    // Look at the target
+                    Vector3 lookPos = currentTarget.transform.position - transform.position;
+                    lookPos.y = 0;
+                    Quaternion rotation = Quaternion.LookRotation(lookPos);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 2f * Time.deltaTime);
+
+                    // if the target is infront of the bot, shoot.
+                    float angle = 8;
+                    if (Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle)
+                    {
+                        if (attackTimer < 0f) Shoot();
+                    }
+                }
+            }
+
+            // if you dont have a target, find one
+            if (currentTarget == null)
+            {
+                if (!FindTarget())
+                {
+                    navAgent.SetDestination(rallyPoint);
+                    return;
                 }
             }
         }
-
-        // if you dont have a target, find one
-        if(currentTarget == null) {
-            if(!FindTarget()) {
-                navAgent.SetDestination(rallyPoint);
-                return;
-            }
-        }
-
     }
 
     private void Shoot() {
