@@ -25,5 +25,6 @@ MonoBehaviour:
   prefab: {fileID: 8457851778601933558, guid: c1f91fed3f68a2f4988187ab769b0b31, type: 3}
   projectile: {fileID: 11400000, guid: c3ba6fb96e91ae547bb35d527cdbf0ed, type: 2}
   fireRate: 1
+  range: 20
   fireVFX: {fileID: 0}
   fireSFX: {fileID: 8300000, guid: 3dc8c20926634b1489ee5b716ff91a4f, type: 3}

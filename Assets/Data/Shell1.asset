@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shell1
   m_EditorClassIdentifier: 
   projectileName: Cannon Shell Level 1
-  prefab: {fileID: 8037231264084636105, guid: 3af4bfec8b7f648799fc51246a995e02, type: 3}
+  prefab: {fileID: 8037231264084636105, guid: 6d9ee86a01790594aa35724ed294e0d1, type: 3}
   impactVFX: {fileID: 0}
   impactSFX: {fileID: 8300000, guid: 3dc8c20926634b1489ee5b716ff91a4f, type: 3}
   damage: 1
