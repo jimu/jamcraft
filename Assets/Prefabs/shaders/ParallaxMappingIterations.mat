@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ParallaxMappingIterations
-  m_Shader: {fileID: 4800000, guid: f1dc6b48ea66df846b1fe1b73ab5bdc1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1c814ac18436d4ca3829e125418544cc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -25,6 +25,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
         m_Texture: {fileID: 2800000, guid: c75aec3517cdaa0419b9787c63b7eafb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f98ab25b1c6d57b46a3371b5b22bcb71, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metallic:
@@ -48,6 +52,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Glossiness: 0.5
+    - _Metallic: 0
     - _MetallicAmount: 0.145
     - _NormalScale: 0.545
     - _Parallax: 0.013
@@ -56,5 +62,6 @@ Material:
     - _Tiling: 1
     - __dirty: 0
     m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _TilingOffset1: {r: 0, g: 0, b: 0, a: 0}
     - _TilingScale1: {r: 0.12, g: 0.12, b: 0, a: 0}
