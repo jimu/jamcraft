@@ -12,13 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19443a0b731bf4c4e9551ae3c86a0ce5, type: 3}
   m_Name: BotM1W1
   m_EditorClassIdentifier: 
+  description: M1W1 Basic Bot
+  alwaysUseDescription: 1
+  craftingPriority: 50
+  ingredients:
+  - {fileID: 11400000, guid: 908de5b12f6150e48b45f2459f3ecd01, type: 2}
+  icon32: {fileID: 0}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: 3a7c18eeeffc7bc45865db3f68ac556c, type: 3}
   locomotionName: Basic Bot
   prefab: {fileID: 195533499094915642, guid: 599c61a171f67a04085eee23031d89ed, type: 3}
-  turretHardpoint: 
+  weaponHardpoint: 
+  weaponHardpoint2: 
+  armourHardpoint: 
   speed: 3
   turnSpeed: 60
-  recipe:
-    redBricks: 0
-    blueBricks: 0
-    greenBricks: 1
-    yellowBricks: 0

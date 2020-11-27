@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d4d0f10fa7cb64e9ee8ef7567e2312, type: 3}
   m_Name: Scoop
   m_EditorClassIdentifier: 
+  description: Harvester Scoop
+  alwaysUseDescription: 0
+  craftingPriority: 400
+  ingredients:
+  - {fileID: 11400000, guid: 24d06165bb02ecd4192cdfb2d9ab0975, type: 2}
+  - {fileID: 11400000, guid: 092b48392ce50324caea1c173a9f5f2d, type: 2}
+  icon32: {fileID: 21300000, guid: 9d351c7440affe944a5216f0183a5dff, type: 3}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: 5e13da7814e87664e89f33e8081b2227, type: 3}
   weaponName: Scoop
   prefab: {fileID: 2309139030370681540, guid: e8344125d0034144cb5585c3b77e22b9, type: 3}
   projectile: {fileID: 0}
   fireRate: 0
   fireVFX: {fileID: 0}
   fireSFX: {fileID: 0}
-  recipe:
-    redBricks: 0
-    blueBricks: 0
-    greenBricks: 0
-    yellowBricks: 1

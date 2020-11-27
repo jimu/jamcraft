@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d4d0f10fa7cb64e9ee8ef7567e2312, type: 3}
   m_Name: Blaster02
   m_EditorClassIdentifier: 
+  description: Blaster Weapon
+  alwaysUseDescription: 0
+  craftingPriority: 100
+  ingredients:
+  - {fileID: 11400000, guid: 092b48392ce50324caea1c173a9f5f2d, type: 2}
+  icon32: {fileID: 0}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: 58e533e442b55e74cbda7dfbb215c641, type: 3}
   weaponName: Single Blaster 02
   prefab: {fileID: 2907108056902906582, guid: 837c279f05a3dd4418d5085f3f2d4b39, type: 3}
   projectile: {fileID: 11400000, guid: c3ba6fb96e91ae547bb35d527cdbf0ed, type: 2}
-  fireRate: 0
+  fireRate: 1
   fireVFX: {fileID: 0}
-  fireSFX: {fileID: 0}
-  recipe:
-    redBricks: 1
-    blueBricks: 0
-    greenBricks: 0
-    yellowBricks: 0
+  fireSFX: {fileID: 8300000, guid: a01779440aac89a4fb46224b6b90c2a0, type: 3}

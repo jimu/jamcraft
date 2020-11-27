@@ -44,9 +44,9 @@ public class DebugSpawner : MonoBehaviour
         Debug.Log($"Debug SpawnBot Pressed: Chassis={chassisData} Weapon={weaponData}");
 
         GameObject bot = PoolManager.Instance.Get(chassisData.prefab, Vector3.zero);
-        if (chassisData.turretHardpoint != "" && weaponData != null)
+        if (chassisData.weaponHardpoint != "" && weaponData != null)
         {
-            Transform pivot = bot.transform.Find(chassisData.turretHardpoint);
+            Transform pivot = bot.transform.Find(chassisData.weaponHardpoint);
             GameObject turret = PoolManager.Instance.Get(weaponData.prefab, pivot);
             if (weaponData.fireRate > 0)
                 pivot.gameObject.AddComponent<DebugTurretRotator>();
@@ -59,5 +59,4 @@ public class DebugSpawner : MonoBehaviour
             agent.angularSpeed = chassisData.turnSpeed;
         }
     }
-
 }
