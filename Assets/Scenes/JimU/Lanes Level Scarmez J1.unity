@@ -3178,7 +3178,7 @@ MonoBehaviour:
   homeBase: {fileID: 1597594467}
   bots: []
   opponent: {fileID: 900575635}
-  defaultBotPrefab: {fileID: 4057739882562929835, guid: 4e6809c2254c45f428979c92f33a050f,
+  defaultBotPrefab: {fileID: 4057739882562929835, guid: 7250b0cbe2c49df4f9b655584136c605,
     type: 3}
   enemySpawnRate: 10
   startNodes:
@@ -6544,17 +6544,17 @@ PrefabInstance:
     - target: {fileID: 5143209646831953309, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209646831953309, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209646831953309, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209646831953309, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
@@ -6599,22 +6599,22 @@ PrefabInstance:
     - target: {fileID: 5143209647528873416, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209647528873416, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209647528873416, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209647528873416, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 106
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143209647744332709, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
@@ -6724,12 +6724,12 @@ PrefabInstance:
     - target: {fileID: 5143209648878605143, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 128.55
       objectReference: {fileID: 0}
     - target: {fileID: 5143209648878605143, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 217.1
       objectReference: {fileID: 0}
     - target: {fileID: 5143209648878605143, guid: de4e7541523a3524bbeb8a86835058f8,
         type: 3}

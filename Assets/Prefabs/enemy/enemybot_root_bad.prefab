@@ -383,6 +383,8 @@ GameObject:
   - component: {fileID: 6091623923508745161}
   - component: {fileID: 5044181932641213853}
   - component: {fileID: 1138205854005325530}
+  - component: {fileID: 4732162116749583851}
+  - component: {fileID: 124522376143715643}
   m_Layer: 14
   m_Name: 4740
   m_TagString: Untagged
@@ -511,6 +513,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152775745883665435}
   m_Mesh: {fileID: -4974468161004867859, guid: 6134694a1d0b9462baf8dd120130fb7d, type: 3}
+--- !u!114 &4732162116749583851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152775745883665435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2119edf0740942a580dbfaa6725e30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Explode Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 2292038894791088885}
+  m_BrickPivotOffset: {x: 0, y: 0.24885297, z: 0.00000011920929}
+  m_Audio: {fileID: 8300000, guid: d70e96c66975a4723a2a230c42ce2ca2, type: 3}
+  m_AudioVolume: 1
+  m_Power: 10
+--- !u!114 &124522376143715643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152775745883665435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a463b99ce41405a8ccc9da2f987314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Touch Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 2292038894791088885}
+  m_BrickPivotOffset: {x: 0, y: 0.24885297, z: 0.00000011920929}
+  Progress: 0
+  Goal: 0
+  m_Target: 0
+  m_SpecificTargetActions: []
+  m_Repeat: 1
+  m_Sense: 2
+  m_SenseTag: Exploder
 --- !u!1 &153313332242405908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1176,65 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.58, y: 0.13, z: 1.58}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &322741924771400286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6293652736160465912}
+  - component: {fileID: 3370973143449372491}
+  - component: {fileID: 5894256216426372686}
+  m_Layer: 14
+  m_Name: Exploder (1)
+  m_TagString: Exploder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6293652736160465912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322741924771400286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.948, z: 2.546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6173553792447214706}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3370973143449372491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322741924771400286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783eb86490ee349a69ddf0667a96c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sense: 2
+  Tag: Exploder
+--- !u!135 &5894256216426372686
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322741924771400286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &323493477350776349
 GameObject:
@@ -8289,6 +8394,66 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2017362749721502970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6173553792447214706}
+  - component: {fileID: 8916174684881195994}
+  - component: {fileID: 4336290988736066473}
+  m_Layer: 14
+  m_Name: Exploder
+  m_TagString: Exploder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6173553792447214706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017362749721502970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6293652736160465912}
+  m_Father: {fileID: 7230797208058053539}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8916174684881195994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017362749721502970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783eb86490ee349a69ddf0667a96c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sense: 2
+  Tag: Exploder
+--- !u!135 &4336290988736066473
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017362749721502970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2028912137681256132
 GameObject:
   m_ObjectHideFlags: 0
@@ -12243,6 +12408,8 @@ GameObject:
   - component: {fileID: 5120187768127037750}
   - component: {fileID: 2067490545106352671}
   - component: {fileID: 7947205914614244290}
+  - component: {fileID: 3518985426006866816}
+  - component: {fileID: 216980891144973588}
   m_Layer: 14
   m_Name: 60849
   m_TagString: Untagged
@@ -12371,6 +12538,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2899240360640781340}
   m_Mesh: {fileID: -4974468161004867859, guid: d96befd74da15ab48b844ea6c68a8b31, type: 3}
+--- !u!114 &3518985426006866816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899240360640781340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2119edf0740942a580dbfaa6725e30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Explode Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 572185037230746460}
+  m_BrickPivotOffset: {x: -0.40000024, y: 0.4816184, z: -0.000036388636}
+  m_Audio: {fileID: 8300000, guid: d70e96c66975a4723a2a230c42ce2ca2, type: 3}
+  m_AudioVolume: 1
+  m_Power: 10
+--- !u!114 &216980891144973588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899240360640781340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a463b99ce41405a8ccc9da2f987314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Touch Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 572185037230746460}
+  m_BrickPivotOffset: {x: -0.40000024, y: 0.4816184, z: -0.000036388636}
+  Progress: 0
+  Goal: 0
+  m_Target: 0
+  m_SpecificTargetActions: []
+  m_Repeat: 1
+  m_Sense: 2
+  m_SenseTag: Exploder
 --- !u!1 &2905368262606265641
 GameObject:
   m_ObjectHideFlags: 0
@@ -18621,6 +18832,7 @@ Transform:
   - {fileID: 1761168968202651566}
   - {fileID: 114598674380383930}
   - {fileID: 600808740}
+  - {fileID: 6173553792447214706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18690,6 +18902,7 @@ MonoBehaviour:
   alignment: 1
   maxHealth: 20
   currentHealth: 0
+  explodeTrigger: {fileID: 2017362749721502970}
   owner: {fileID: 0}
   rallyPoint: {x: 0, y: 0, z: 0}
   radius: 2
@@ -25654,6 +25867,8 @@ GameObject:
   - component: {fileID: 4017771200483523057}
   - component: {fileID: 4934371755075969317}
   - component: {fileID: 8868460501240358324}
+  - component: {fileID: 2314386766629588720}
+  - component: {fileID: 3525380177220048205}
   m_Layer: 14
   m_Name: 11477
   m_TagString: Untagged
@@ -25782,6 +25997,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5526020638707629758}
   m_Mesh: {fileID: -4974468161004867859, guid: fa11272100cf04dec9e5c441d3625f40, type: 3}
+--- !u!114 &2314386766629588720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5526020638707629758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2119edf0740942a580dbfaa6725e30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Explode Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 4283676276694984190}
+  m_BrickPivotOffset: {x: -0.40047562, y: 0.0009991359, z: -0.00000023841858}
+  m_Audio: {fileID: 8300000, guid: d70e96c66975a4723a2a230c42ce2ca2, type: 3}
+  m_AudioVolume: 1
+  m_Power: 10
+--- !u!114 &3525380177220048205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5526020638707629758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a463b99ce41405a8ccc9da2f987314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Touch Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 4283676276694984190}
+  m_BrickPivotOffset: {x: -0.40047562, y: 0.0009991359, z: -0.00000023841858}
+  Progress: 0
+  Goal: 0
+  m_Target: 0
+  m_SpecificTargetActions: []
+  m_Repeat: 1
+  m_Sense: 2
+  m_SenseTag: Exploder
 --- !u!1 &5526260532195320500
 GameObject:
   m_ObjectHideFlags: 0
