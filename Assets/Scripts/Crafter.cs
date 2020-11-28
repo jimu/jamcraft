@@ -9,9 +9,30 @@ using System.Linq;
 
 #pragma warning disable 649
 
+/**
+ * INTERFACE
+ *   Action<Bot> onNewBot - subscribe to this to be notified when a Bot has been created
+ *   
+ *  Add items to inventory:
+ *  
+ *   Crafter.Instance.AddToInventory(CraftableObject)
+ *   Crafter.Instance.AddToInventory(CraftableObject[])
+ *   Crafter.Instance.AddToInventory(List<CraftableObject>)
+ *  
+ *  Use DebugInventoryRewards.cs to add cheat buttons that add resources to inventory
+ *   
+ * 
+ * KNOWS ABOUT
+ * CraftableCatalogData - List of things that can be built
+ * CraftableData botOutputPlaceholderData - This is a generic sprite used for bots without an image
+ */
+
 public class Crafter : MonoSingleton<Crafter>
 {
-    [SerializeField] Transform workbenchContainer;
+    // subscribe to onNewBot to be notified when new bots are released into the wild
+    public Action<Bot> onNewBot;
+    
+    [SerializeField] Transform workbenchContainer;  // GameObject Containing Inventory Items
     [SerializeField] Transform inventoryContainer;
     [SerializeField] Image outputSprite;
     [SerializeField] Sprite noOutputSprite;
@@ -24,17 +45,31 @@ public class Crafter : MonoSingleton<Crafter>
     [SerializeField] CraftableCatalogData catalogData;
     [SerializeField] CraftableData botOutputPlaceholderData;
 
-    public Action<Bot> onNewBot;
-
+    
     // sorted catalog
     List<CraftableData> catalog;
 
     CraftableData craftOutput;
     Dictionary<CraftableData, int> workbenchItems = new Dictionary<CraftableData, int>();
+        
 
 
-    // subscribe to onNewBot to be notified when new bots are released into the wild
+    public CraftableData RefreshOutput()
+    {
+        InventoryWorkbench();
 
+        //Debug.Log($"RefreshRecipe: There are {catalog.Count} recipes. My name is {name}");
+
+        foreach (CraftableData o in catalog)
+        {
+            //            Debug.Log($"Checking recipe {o.name}: {o.IsSupplied(workbenchItems)}");
+            if (o.IsSupplied(workbenchItems))
+                return SetOutput(o);
+        }
+
+        Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
+        return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
+    }
 
     protected override void Init()
     {
@@ -57,24 +92,6 @@ public class Crafter : MonoSingleton<Crafter>
         }
     }
 
-
-    public CraftableData RefreshOutput()
-    {
-
-        InventoryWorkbench();
-
-        //Debug.Log($"RefreshRecipe: There are {catalog.Count} recipes. My name is {name}");
-
-        foreach (CraftableData o in catalog) {
-//            Debug.Log($"Checking recipe {o.name}: {o.IsSupplied(workbenchItems)}");
-            if (o.IsSupplied(workbenchItems))
-                return SetOutput(o);
-        }
-
-        Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
-        return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
-    }
-    
 
     CraftableData SetOutput(CraftableData output)
     {
@@ -100,25 +117,15 @@ public class Crafter : MonoSingleton<Crafter>
     {
         Debug.Log($"I'm going to craft a {craftOutput.name} ({craftOutput.description})");
 
+        ConsumeResources(craftOutput);
+
         if (craftOutput == botOutputPlaceholderData)
-        {
             ConstructBot();
-            return;
-        }
+        else
+            AddToInventory(craftOutput);
 
-        Transform slot = FindAnEmptyInventorySlot();
-        Debug.Assert(slot != null, "Crafting without available inventory slot. Craft button should have been disabled?");
-
-        if (slot != null)
-        {
-            ConsumeResources(craftOutput);
-            Item item = Instantiate(inventoryItemPrefab, slot);
-            item.Data = craftOutput;
-            item.GetComponent<Image>().sprite = craftOutput.GetSmallestIcon(TBDSprite);
-            RefreshOutput();
-        }
+        RefreshOutput();
     }
-
 
     // destroys workbench items in recipe
     // assumes ingredients are available. unavailable ingrediates are ignored.
@@ -164,6 +171,7 @@ public class Crafter : MonoSingleton<Crafter>
         return false;
     }
 
+    // Checks workbench for a valid bot combination
     void ConstructBot()
     {
         Item weapon1, weapon2, chassis, armour;
@@ -187,6 +195,7 @@ public class Crafter : MonoSingleton<Crafter>
         if (chassis)
             ConstructBotFromParts(chassis, weapon1, weapon2, armour);
     }
+
 
     void ConstructBotFromParts(Item chassis, Item weapon1, Item weapon2, Item armour)
     {
@@ -229,8 +238,35 @@ public class Crafter : MonoSingleton<Crafter>
             botData.armour = armourData;
         }
 
+        if (botData.weapon1 || botData.weapon2)
+            bot.AddComponent<Targeter>();
+
         DestroyImmediate(chassis.gameObject);
         RefreshOutput();
         onNewBot?.Invoke(botData);
     }
+
+    // Adds a single CraftableData to the inventory if there is room
+    public void AddToInventory(CraftableData itemData)
+    {
+        Transform slot = FindAnEmptyInventorySlot();
+        Debug.Assert(slot != null, $"Discarding item {itemData.name}");
+
+        if (slot != null)
+        {
+            Item item = Instantiate(inventoryItemPrefab, slot);
+
+            item.Data = itemData;
+            item.GetComponent<Image>().sprite = itemData.GetSmallestIcon(TBDSprite);
+        }
+
+    }
+
+    // Adds a list of CraftableData to the inventory. Excess items are discarded
+    public void AddToInventory(IEnumerable<CraftableData> itemsData)
+    {
+        foreach(CraftableData item in itemsData)
+            AddToInventory(item);
+    }
+
 }
