@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: b1d29252b470ba3469072b6571382742,
+  m_LightingDataAsset: {fileID: 112000000, guid: e000bf8981b39ba4f89dfd5086b71de4,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -122,6 +122,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 65ba8580c63e716458594668a5194116, type: 2}
+--- !u!114 &3440647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: probes
+  m_EditorClassIdentifier: 
+  resolution: 16
+  bitmask: 1
+  id: 7
+  sortingID: 0
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 248
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 1
+  mode: 2
+  renderMode: 1000
+  renderDirMode: 5
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1 &23345285
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,12 +502,12 @@ PrefabInstance:
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: -0.00012737681
+      value: 0.5590782
       objectReference: {fileID: 0}
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.73088336
+      value: 0.5857224
       objectReference: {fileID: 0}
     - target: {fileID: 1501947932228691604, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
@@ -1144,80 +1181,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6070961774737789760}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &297857561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA6
-  m_EditorClassIdentifier: 
-  resolution: 2048
-  bitmask: 1
-  id: 6
-  sortingID: 7
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
---- !u!114 &315957226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA4
-  m_EditorClassIdentifier: 
-  resolution: 2048
-  bitmask: 1
-  id: 4
-  sortingID: 5
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1 &318880272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,12 +1325,12 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5792822
+      value: 0.77236384
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.20003727
+      value: 0.80003726
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -1402,7 +1365,7 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6021423
+      value: 0.7987362
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -1672,27 +1635,27 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.19768287
+      value: 0.1991887
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.1977421
+      value: 0.19924837
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.8041183
+      value: 0.6204502
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.79269797
+      value: 0.000036630543
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -1722,12 +1685,12 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.00003686369
+      value: 0.81024355
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.40554833
+      value: 0.19663057
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -1757,12 +1720,12 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.81024355
+      value: 0.00003686369
       objectReference: {fileID: 0}
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.19663057
+      value: 0.40554833
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -2055,43 +2018,6 @@ Transform:
   m_Father: {fileID: 346594650}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &434605787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA2
-  m_EditorClassIdentifier: 
-  resolution: 4096
-  bitmask: 1
-  id: 2
-  sortingID: 3
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1001 &441026920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2199,18 +2125,6 @@ PrefabInstance:
 --- !u!4 &441026921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9006895299354506197, guid: 9bb9b30ad682f65488ff97b273967aaa,
-    type: 3}
-  m_PrefabInstance: {fileID: 441026920}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &441026922 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8384760321817027611, guid: 9bb9b30ad682f65488ff97b273967aaa,
-    type: 3}
-  m_PrefabInstance: {fileID: 441026920}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &441026923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6516980396675132296, guid: 9bb9b30ad682f65488ff97b273967aaa,
     type: 3}
   m_PrefabInstance: {fileID: 441026920}
   m_PrefabAsset: {fileID: 0}
@@ -2662,55 +2576,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 542937136}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &542937138 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8384760321817027611, guid: 9bb9b30ad682f65488ff97b273967aaa,
-    type: 3}
-  m_PrefabInstance: {fileID: 542937136}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &542937139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6516980396675132296, guid: 9bb9b30ad682f65488ff97b273967aaa,
-    type: 3}
-  m_PrefabInstance: {fileID: 542937136}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &548899419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LM0
-  m_EditorClassIdentifier: 
-  resolution: 4096
-  bitmask: 1
-  id: 0
-  sortingID: 1
-  isImplicit: 1
-  area: 61618.047
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1001 &602258953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2818,18 +2683,6 @@ PrefabInstance:
 --- !u!4 &602258954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2610610064361878112, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 602258953}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &602258955 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4072079072264282192, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 602258953}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &602258956 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2996530400347502186, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
     type: 3}
   m_PrefabInstance: {fileID: 602258953}
   m_PrefabAsset: {fileID: 0}
@@ -3078,6 +2931,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736978306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LMA3
+  m_EditorClassIdentifier: 
+  resolution: 4096
+  bitmask: 1
+  id: 3
+  sortingID: 4
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1001 &865048730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3148,27 +3038,27 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.36062926
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.36068305
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.38620067
+      value: 0.34146306
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.4000373
+      value: -0.0006743747
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -3203,7 +3093,7 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.40554833
+      value: 0.7987362
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -3238,7 +3128,7 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.20003727
+      value: 0.6000373
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -3334,6 +3224,8 @@ MonoBehaviour:
   enemy: {fileID: 692720866}
   winText: {fileID: 376858639}
   loseText: {fileID: 1199893963}
+  loseDelay: 2
+  winDelay: 4
 --- !u!4 &873367134
 Transform:
   m_ObjectHideFlags: 0
@@ -3557,43 +3449,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &926012977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA5
-  m_EditorClassIdentifier: 
-  resolution: 2048
-  bitmask: 1
-  id: 5
-  sortingID: 6
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1001 &931077122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3704,18 +3559,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 931077122}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &931077124 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4072079072264282192, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 931077122}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &931077125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2996530400347502186, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 931077122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &943377509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3746,12 +3589,12 @@ PrefabInstance:
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5590782
+      value: 0.22026987
       objectReference: {fileID: 0}
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.5857224
+      value: 0.73088336
       objectReference: {fileID: 0}
     - target: {fileID: 1501947932228691604, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
@@ -3948,18 +3791,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1025325678}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1025325680 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8288046866327176427, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1025325678}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1025325681 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4423147008990440346, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1025325678}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1066645509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4045,12 +3876,12 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.38620067
+      value: 0.19311908
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80003726
+      value: 0.6000373
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -4120,7 +3951,7 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6000373
+      value: 0.80003726
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -4382,27 +4213,27 @@ PrefabInstance:
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.36062926
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.36068305
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: -0.0006741646
+      value: 0.5792822
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.35372218
+      value: 0.20003727
       objectReference: {fileID: 0}
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4412,7 +4243,7 @@ PrefabInstance:
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4432,7 +4263,7 @@ PrefabInstance:
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.669869
+      value: -0.00050367333
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4457,12 +4288,12 @@ PrefabInstance:
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5792822
+      value: 0.77236384
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80003726
+      value: 0.20003727
       objectReference: {fileID: 0}
     - target: {fileID: 3999185309057986018, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4502,12 +4333,12 @@ PrefabInstance:
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5792822
+      value: 0.19311908
       objectReference: {fileID: 0}
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.4000373
+      value: 0.80003726
       objectReference: {fileID: 0}
     - target: {fileID: 5935801954632665176, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4617,12 +4448,12 @@ PrefabInstance:
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.77236384
+      value: 0.38620067
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.4000373
+      value: 0.20003727
       objectReference: {fileID: 0}
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4632,7 +4463,7 @@ PrefabInstance:
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4652,7 +4483,7 @@ PrefabInstance:
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: -0.00050367333
+      value: 0.669869
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f324ffc3bf483645b50e555ce9183f5, type: 3}
@@ -4734,6 +4565,43 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1080308098}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1086734894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LMA2
+  m_EditorClassIdentifier: 
+  resolution: 4096
+  bitmask: 1
+  id: 2
+  sortingID: 3
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1001 &1133998503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4754,27 +4622,27 @@ PrefabInstance:
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.36062926
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.36068305
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: -0.0006741646
+      value: 0.5792822
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: -0.0006743747
+      value: 0.4000373
       objectReference: {fileID: 0}
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4814,27 +4682,27 @@ PrefabInstance:
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.36062926
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.36068305
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.34146306
+      value: 0.77236384
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.35372218
+      value: 0.4000373
       objectReference: {fileID: 0}
     - target: {fileID: 3999185309057986018, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4874,7 +4742,7 @@ PrefabInstance:
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.77236384
+      value: 0.38620067
       objectReference: {fileID: 0}
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -4989,12 +4857,12 @@ PrefabInstance:
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.77236384
+      value: 0.5792822
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80003726
+      value: 0.6000373
       objectReference: {fileID: 0}
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -5512,43 +5380,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1260279063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA1
-  m_EditorClassIdentifier: 
-  resolution: 4096
-  bitmask: 1
-  id: 1
-  sortingID: 2
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1001 &1266124576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5634,12 +5465,12 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.61575973
+      value: 0.1883951
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.40248248
+      value: 0.80492854
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -5704,7 +5535,7 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.61575973
+      value: 0.8041183
       objectReference: {fileID: 0}
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -5938,7 +5769,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 8.24e-43, y: -69.072815, z: 8.24e-43, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1.2533e-41, z: 0, w: -3.046875}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6066,18 +5897,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1350727685}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1350727687 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4072079072264282192, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1350727685}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1350727688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2996530400347502186, guid: 12a8fcebb30cf2c459ad6c8958425b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1350727685}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388235657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6183,27 +6002,27 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.36062926
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.36068305
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: -0.0006741646
+      value: 0.5792822
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.35372218
+      value: 0.80003726
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -6622,7 +6441,7 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.6204502
+      value: 0.81024355
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -6657,12 +6476,12 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.37675366
+      value: 0.8041183
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80492854
+      value: 0.5975902
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -6758,6 +6577,43 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1463822355}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476709657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LMA1
+  m_EditorClassIdentifier: 
+  resolution: 4096
+  bitmask: 1
+  id: 1
+  sortingID: 2
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1 &1494712901
 GameObject:
   m_ObjectHideFlags: 0
@@ -6789,6 +6645,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495987714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LMA5
+  m_EditorClassIdentifier: 
+  resolution: 2048
+  bitmask: 1
+  id: 5
+  sortingID: 6
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+--- !u!114 &1517502634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LMA6
+  m_EditorClassIdentifier: 
+  resolution: 2048
+  bitmask: 1
+  id: 6
+  sortingID: 7
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1001 &1537549487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7021,18 +6951,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1552075998}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1552076000 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1640739805229405073, guid: 1cf9ac81fe5a8c04bba10d4c5883a2b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1552075998}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1552076001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803497037346239254, guid: 1cf9ac81fe5a8c04bba10d4c5883a2b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1552075998}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1581855665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7140,18 +7058,6 @@ PrefabInstance:
 --- !u!4 &1581855666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3639340862422036850, guid: 1cf9ac81fe5a8c04bba10d4c5883a2b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1581855665}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1581855667 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1640739805229405073, guid: 1cf9ac81fe5a8c04bba10d4c5883a2b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1581855665}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1581855668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7803497037346239254, guid: 1cf9ac81fe5a8c04bba10d4c5883a2b2,
     type: 3}
   m_PrefabInstance: {fileID: 1581855665}
   m_PrefabAsset: {fileID: 0}
@@ -7343,7 +7249,7 @@ MonoBehaviour:
   renderSettingsSettingsMode: 2
   renderSettingsFixSeams: 1
   renderSettingsDenoise: 0
-  renderSettingsDenoise2x: 0
+  renderSettingsDenoise2x: 1
   renderSettingsEncode: 1
   renderSettingsEncodeMode: 0
   renderSettingsOverwriteWarning: 0
@@ -7888,108 +7794,98 @@ MonoBehaviour:
     cookie: {fileID: 0}
     angle: 30
   implicitGroups:
-  - {fileID: 1661243787}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 434605787}
-  - {fileID: 1856517920}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 1260279063}
-  - {fileID: 434605787}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 434605787}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 1260279063}
-  - {fileID: 548899419}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 434605787}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 434605787}
-  - {fileID: 548899419}
-  - {fileID: 315957226}
-  - {fileID: 926012977}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 315957226}
-  - {fileID: 1856517920}
-  - {fileID: 926012977}
-  - {fileID: 926012977}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 315957226}
-  - {fileID: 315957226}
-  - {fileID: 1260279063}
-  - {fileID: 1260279063}
-  - {fileID: 1260279063}
-  - {fileID: 548899419}
-  - {fileID: 297857561}
-  - {fileID: 434605787}
-  - {fileID: 926012977}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 1260279063}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 297857561}
-  - {fileID: 297857561}
-  - {fileID: 315957226}
-  - {fileID: 926012977}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1260279063}
-  - {fileID: 1260279063}
-  - {fileID: 1260279063}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 434605787}
-  - {fileID: 1260279063}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 548899419}
-  - {fileID: 434605787}
-  - {fileID: 1260279063}
-  - {fileID: 548899419}
-  - {fileID: 297857561}
-  - {fileID: 1260279063}
-  - {fileID: 1260279063}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 1260279063}
-  - {fileID: 926012977}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 548899419}
-  - {fileID: 297857561}
-  - {fileID: 1260279063}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 434605787}
-  - {fileID: 315957226}
-  - {fileID: 315957226}
-  - {fileID: 1856517920}
-  - {fileID: 1856517920}
-  - {fileID: 926012977}
-  - {fileID: 1856517920}
+  - {fileID: 3440647}
+  - {fileID: 1832724970}
+  - {fileID: 1832724970}
+  - {fileID: 1832724970}
+  - {fileID: 1832724970}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1086734894}
+  - {fileID: 1086734894}
+  - {fileID: 1086734894}
+  - {fileID: 1832724970}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1832724970}
+  - {fileID: 736978306}
+  - {fileID: 1495987714}
+  - {fileID: 1086734894}
+  - {fileID: 1832724970}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1832724970}
+  - {fileID: 1495987714}
+  - {fileID: 1637505091}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 1495987714}
+  - {fileID: 1495987714}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1517502634}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1086734894}
+  - {fileID: 1476709657}
+  - {fileID: 1832724970}
+  - {fileID: 1517502634}
+  - {fileID: 1517502634}
+  - {fileID: 1637505091}
+  - {fileID: 1637505091}
+  - {fileID: 1637505091}
+  - {fileID: 1495987714}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1495987714}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1086734894}
+  - {fileID: 1476709657}
+  - {fileID: 1832724970}
+  - {fileID: 1086734894}
+  - {fileID: 1476709657}
+  - {fileID: 1832724970}
+  - {fileID: 1517502634}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1495987714}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 1832724970}
+  - {fileID: 1517502634}
+  - {fileID: 1476709657}
+  - {fileID: 1476709657}
+  - {fileID: 1086734894}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1637505091}
+  - {fileID: 1637505091}
+  - {fileID: 736978306}
+  - {fileID: 1086734894}
+  - {fileID: 1637505091}
+  - {fileID: 736978306}
   implicitGroupedObjects:
   - {fileID: 0}
   - {fileID: 121953827}
@@ -8002,19 +7898,14 @@ MonoBehaviour:
   - {fileID: 346778068}
   - {fileID: 346778069}
   - {fileID: 346778070}
-  - {fileID: 441026923}
   - {fileID: 444880878}
   - {fileID: 522735954}
-  - {fileID: 542937139}
-  - {fileID: 602258956}
   - {fileID: 655638128}
   - {fileID: 679783066}
   - {fileID: 865048735}
   - {fileID: 865048736}
   - {fileID: 865048737}
-  - {fileID: 931077125}
   - {fileID: 943377512}
-  - {fileID: 1025325681}
   - {fileID: 1066645514}
   - {fileID: 1066645515}
   - {fileID: 1066645516}
@@ -8034,7 +7925,6 @@ MonoBehaviour:
   - {fileID: 1266124581}
   - {fileID: 1266124582}
   - {fileID: 1266124583}
-  - {fileID: 1350727688}
   - {fileID: 1388235662}
   - {fileID: 1388235663}
   - {fileID: 1388235664}
@@ -8042,8 +7932,6 @@ MonoBehaviour:
   - {fileID: 1463822361}
   - {fileID: 1463822362}
   - {fileID: 1537549490}
-  - {fileID: 1552076001}
-  - {fileID: 1581855668}
   - {fileID: 1671421061}
   - {fileID: 1671421062}
   - {fileID: 1671421067}
@@ -8062,8 +7950,6 @@ MonoBehaviour:
   - {fileID: 1844492766}
   - {fileID: 1844492767}
   - {fileID: 1844492768}
-  - {fileID: 1901665631}
-  - {fileID: 1982956026}
   - {fileID: 2031716511}
   - {fileID: 2031716512}
   - {fileID: 2031716513}
@@ -8096,16 +7982,16 @@ MonoBehaviour:
   bounds:
   - m_Center: {x: 4, y: 4.855, z: 0}
     m_Extent: {x: 29, y: 5.855, z: 37.757156}
-  - m_Center: {x: 4, y: 4.855, z: 0}
-    m_Extent: {x: 29, y: 5.855, z: 50}
-  - m_Center: {x: 4, y: 4.855, z: 0}
-    m_Extent: {x: 29, y: 5.855, z: 33.96936}
+  - m_Center: {x: 4, y: 4.855, z: 9.14669}
+    m_Extent: {x: 29, y: 5.855, z: 40.85331}
+  - m_Center: {x: 4, y: 4.855, z: -8.01532}
+    m_Extent: {x: 29, y: 5.855, z: 41.98468}
   - m_Center: {x: 4, y: 5.355, z: 0}
-    m_Extent: {x: 24.106619, y: 5.355, z: 27.169361}
-  - m_Center: {x: 3.4399881, y: 5.355, z: 0}
-    m_Extent: {x: 11.731511, y: 5.355, z: 14.39501}
-  - m_Center: {x: -0.40891933, y: 5.355, z: 2.262741}
-    m_Extent: {x: 15.100442, y: 5.355, z: 31.70662}
+    m_Extent: {x: 24.106619, y: 5.355, z: 29.443878}
+  - m_Center: {x: 3.4399881, y: 5.355, z: -1.5999966}
+    m_Extent: {x: 11.731511, y: 5.355, z: 12.795013}
+  - m_Center: {x: 8.561369, y: 5.355, z: 4.53137}
+    m_Extent: {x: 19.545246, y: 5.355, z: 29.43799}
   - m_Center: {x: 3.999998, y: 5.355, z: -16.187172}
     m_Extent: {x: 28.818521, y: 5.355, z: 17.782188}
   - m_Center: {x: 0, y: 0, z: 0}
@@ -8131,21 +8017,21 @@ MonoBehaviour:
   debugTex: {fileID: 0}
   debugRT: {fileID: 0}
   maps:
-  - {fileID: 2800000, guid: ac3d73099d72ae143801936b7d9720c9, type: 3}
-  - {fileID: 2800000, guid: 7ceca279d175ce748a7af5f728204261, type: 3}
-  - {fileID: 2800000, guid: 0031a734127021f459826d430180edb9, type: 3}
-  - {fileID: 2800000, guid: 9ad6bef103f694d44b46c37c483c953a, type: 3}
-  - {fileID: 2800000, guid: d84818b2b66ee8048bfff79273a2b847, type: 3}
-  - {fileID: 2800000, guid: bc2d9e137434980449c500458109b814, type: 3}
-  - {fileID: 2800000, guid: 531b41e42c08ab24b92a0efc4a266de1, type: 3}
+  - {fileID: 2800000, guid: 6672daf64ff7c4845851f4f0c39311bd, type: 3}
+  - {fileID: 2800000, guid: 9c22f992633ef704fa5f714b094a65c7, type: 3}
+  - {fileID: 2800000, guid: 5d589c3d0af7708428ac35ebbfa822a5, type: 3}
+  - {fileID: 2800000, guid: a8069dca54851d249a167d1b84d28871, type: 3}
+  - {fileID: 2800000, guid: 51b1587291804ac43948e7db15db94e9, type: 3}
+  - {fileID: 2800000, guid: 546d69d2472f3864eb50f54fb962e9e4, type: 3}
+  - {fileID: 2800000, guid: bca64bce15e48a949af934bafb2ede6b, type: 3}
   masks:
-  - {fileID: 2800000, guid: 347479a040573ea469c5e5335eb67ccb, type: 3}
-  - {fileID: 2800000, guid: f8f5cf58ecb0d0f4b95ec63acb171a28, type: 3}
-  - {fileID: 2800000, guid: f4ba14a8f98bcfe42ac9afd3cd18bfa5, type: 3}
-  - {fileID: 2800000, guid: 30e5f8ae1731434469ccf814ae204edd, type: 3}
-  - {fileID: 2800000, guid: 4cae38c82d1312e4bad2e271e7a854b8, type: 3}
-  - {fileID: 2800000, guid: b460449498479b24e840435d80d0a1b7, type: 3}
-  - {fileID: 2800000, guid: 54cdbd33f9404a94db9d99e47b2b7087, type: 3}
+  - {fileID: 2800000, guid: 76c0d63afa951864ead791c77820e42b, type: 3}
+  - {fileID: 2800000, guid: 81adc27a0e366e3459f621289a440977, type: 3}
+  - {fileID: 2800000, guid: db51ca2e167e6d34c8936854f04b1bfc, type: 3}
+  - {fileID: 2800000, guid: b84578a3e186edb499290adc7c841300, type: 3}
+  - {fileID: 2800000, guid: ad4d4fe595a537b4cb53c2064d72f84c, type: 3}
+  - {fileID: 2800000, guid: 925e00552d9986f45b84ea7dbe5076fa, type: 3}
+  - {fileID: 2800000, guid: ae02e91266cc90245a5f020c6dd4fc24, type: 3}
   dirMaps: []
   rnmMaps0: []
   rnmMaps1: []
@@ -8162,19 +8048,14 @@ MonoBehaviour:
   - {fileID: 346778065}
   - {fileID: 346778066}
   - {fileID: 346778067}
-  - {fileID: 441026922}
   - {fileID: 444880877}
   - {fileID: 522735957}
-  - {fileID: 542937138}
-  - {fileID: 602258955}
   - {fileID: 655638131}
   - {fileID: 679783068}
   - {fileID: 865048732}
   - {fileID: 865048733}
   - {fileID: 865048734}
-  - {fileID: 931077124}
   - {fileID: 943377511}
-  - {fileID: 1025325680}
   - {fileID: 1066645511}
   - {fileID: 1066645512}
   - {fileID: 1066645513}
@@ -8194,7 +8075,6 @@ MonoBehaviour:
   - {fileID: 1266124578}
   - {fileID: 1266124579}
   - {fileID: 1266124580}
-  - {fileID: 1350727687}
   - {fileID: 1388235659}
   - {fileID: 1388235660}
   - {fileID: 1388235661}
@@ -8202,8 +8082,6 @@ MonoBehaviour:
   - {fileID: 1463822358}
   - {fileID: 1463822359}
   - {fileID: 1537549489}
-  - {fileID: 1552076000}
-  - {fileID: 1581855667}
   - {fileID: 1671421059}
   - {fileID: 1671421060}
   - {fileID: 1671421063}
@@ -8222,8 +8100,6 @@ MonoBehaviour:
   - {fileID: 1844492763}
   - {fileID: 1844492764}
   - {fileID: 1844492765}
-  - {fileID: 1901665630}
-  - {fileID: 1982956025}
   - {fileID: 2031716508}
   - {fileID: 2031716509}
   - {fileID: 2031716510}
@@ -8253,121 +8129,101 @@ MonoBehaviour:
   - {fileID: 2132218353}
   - {fileID: 2132218354}
   - {fileID: 2132218355}
-  bakedIDs: 0000000000000000000000000000000002000000030000000200000002000000010000000200000000000000000000000200000000000000000000000100000000000000030000000300000002000000000000000000000000000000030000000300000002000000000000000400000005000000030000000300000004000000030000000500000005000000030000000300000004000000040000000100000001000000010000000000000006000000020000000500000002000000020000000100000000000000000000000000000006000000060000000400000005000000030000000300000001000000010000000100000002000000020000000300000003000000030000000300000002000000010000000000000000000000000000000200000001000000000000000600000001000000010000000300000003000000030000000300000003000000030000000100000005000000020000000200000000000000060000000100000002000000020000000200000002000000040000000400000003000000030000000500000003000000
+  bakedIDs: 00000000000000000000000000000000020000000300000002000000020000000200000002000000000000000100000001000000000000000300000005000000020000000000000003000000030000000200000000000000050000000400000003000000030000000300000003000000050000000500000003000000030000000300000003000000010000000100000001000000060000000200000003000000020000000200000001000000000000000600000006000000040000000400000004000000050000000100000001000000010000000500000003000000030000000300000003000000020000000200000001000000000000000200000001000000000000000600000001000000010000000300000002000000030000000200000003000000030000000200000005000000020000000300000000000000060000000100000001000000020000000300000002000000040000000400000003000000020000000400000003000000
   bakedScaleOffset:
   - {x: 0.56189317, y: 0.5611089, z: -0.0015443625, w: -0.0015411816}
   - {x: 0.220652, y: 0.22065164, z: 0.7794754, w: 0.5857224}
-  - {x: 0.220652, y: 0.22065164, z: -0.00012737681, w: 0.73088336}
+  - {x: 0.220652, y: 0.22065164, z: 0.5590782, w: 0.5857224}
   - {x: 0.220652, y: 0.22065164, z: 0.7794754, w: 0.365378}
   - {x: 0.19918868, y: 0.19924834, z: 0.37962347, w: 0.6021423}
-  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.20003727}
-  - {x: 0.19918868, y: 0.19924836, z: 0.00003686376, w: 0.6021423}
-  - {x: 0.1991887, y: 0.19924837, z: 0.81024355, w: 0.19663057}
-  - {x: 0.19768287, y: 0.1977421, z: 0.8041183, w: 0.79269797}
+  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.80003726}
+  - {x: 0.19918868, y: 0.19924836, z: 0.00003686376, w: 0.7987362}
   - {x: 0.1991887, y: 0.19924837, z: 0.00003686369, w: 0.40554833}
-  - {x: 0.058475774, y: 0.058432322, z: 0.6760025, w: 0.22085069}
+  - {x: 0.1991887, y: 0.19924837, z: 0.6204502, w: 0.000036630543}
+  - {x: 0.1991887, y: 0.19924837, z: 0.81024355, w: 0.19663057}
   - {x: 0.220652, y: 0.22065164, z: 0.5590782, w: 0.365378}
-  - {x: 0.6233951, y: 0.622525, z: -0.0017134005, w: -0.0017098713}
-  - {x: 0.05847575, y: 0.0584323, z: 0.6760025, w: 0.27859613}
-  - {x: 0.043166883, y: 0.043158293, z: 0.7801687, w: 0.2824844}
+  - {x: 0.6186824, y: 0.61781883, z: -0.0017004475, w: 0.40074918}
   - {x: 0.6186824, y: 0.61781883, z: -0.0017004475, w: -0.0016969452}
   - {x: 0.56189317, y: 0.5611089, z: -0.0015443625, w: 0.3639642}
-  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.20003727}
-  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.4000373}
-  - {x: 0.19918868, y: 0.19924836, z: 0.18983017, w: 0.40554833}
-  - {x: 0.0431669, y: 0.043158308, z: 0.73550093, w: 0.22091036}
-  - {x: 0.220652, y: 0.22065164, z: 0.5590782, w: 0.5857224}
-  - {x: 0.058296435, y: 0.058307014, z: 0.5597124, w: 0.27940664}
-  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.6000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.6000373}
+  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: -0.0006743747}
+  - {x: 0.19918868, y: 0.19924836, z: 0.18983017, w: 0.7987362}
+  - {x: 0.220652, y: 0.22065164, z: 0.22026987, w: 0.73088336}
   - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.80003726}
+  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.6000373}
   - {x: 0.19918868, y: 0.19924836, z: 0.18983017, w: 0.6021423}
   - {x: 0.220652, y: 0.22065164, z: 0.7794754, w: -0.00012737532}
-  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: 0.669869}
   - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: -0.00050367333}
-  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.4000373}
-  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.4000373}
-  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: 0.35372218}
-  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.80003726}
+  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: 0.669869}
+  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.80003726}
+  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.20003727}
+  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.20003727}
+  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.20003727}
   - {x: 0.3169823, y: 0.31698346, z: 0.6837708, w: 0.3538929}
   - {x: 0.3169823, y: 0.31698346, z: 0.6837708, w: 0.66986895}
-  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.6000373}
-  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.80003726}
-  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: -0.0006743747}
-  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: 0.35372218}
-  - {x: 0.19768289, y: 0.19774212, z: 0.61575973, w: 0.1951441}
-  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.40248248}
+  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.6000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.6000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.4000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.4000373}
+  - {x: 0.19768289, y: 0.19774212, z: 0.8041183, w: 0.1951441}
+  - {x: 0.19768287, y: 0.1977421, z: 0.1883951, w: 0.80492854}
   - {x: 0.19768289, y: 0.19774212, z: 0.61575973, w: 0.00003635356}
-  - {x: 0.043166887, y: 0.043158296, z: 0.7355009, w: 0.27865583}
   - {x: 0.3656204, y: 0.3656749, z: -0.0006834951, w: -0.000683708}
   - {x: 0.19918868, y: 0.19924834, z: 0.37962347, w: 0.79873616}
-  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: 0.35372218}
+  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.80003726}
   - {x: 0.1991887, y: 0.19924837, z: 0.6204502, w: 0.19663057}
-  - {x: 0.1991887, y: 0.19924837, z: 0.6204502, w: 0.000036630543}
-  - {x: 0.19768287, y: 0.1977421, z: 0.37675366, w: 0.80492854}
-  - {x: 0.220652, y: 0.22065164, z: 0.5590782, w: -0.00012737532}
-  - {x: 0.060886417, y: 0.061004978, z: 0.6137051, w: 0.27939606}
-  - {x: 0.060886372, y: 0.06100493, z: 0.7759569, w: 0.22084063}
-  - {x: 0.3213694, y: 0.32137054, z: -0.0005106395, w: 0.67914003}
-  - {x: 0.3213694, y: 0.32137054, z: -0.0005106395, w: 0.35879079}
-  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: -0.0006743747}
-  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: -0.0006743747}
-  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.20003727}
-  - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.6000373}
+  - {x: 0.1991887, y: 0.19924837, z: 0.81024355, w: 0.000036630543}
   - {x: 0.19768287, y: 0.1977421, z: 0.8041183, w: 0.5975902}
-  - {x: 0.19768287, y: 0.1977421, z: 0.00003658501, w: 0.80492854}
-  - {x: 0.19768289, y: 0.19774212, z: 0.8041183, w: 0.00003635356}
-  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.6021422}
-  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.7987361}
-  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.000037265323}
-  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.20003727}
-  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.4000373}
+  - {x: 0.220652, y: 0.22065164, z: 0.5590782, w: -0.00012737532}
+  - {x: 0.3213694, y: 0.32137054, z: -0.0005106395, w: 0.35879079}
+  - {x: 0.3213694, y: 0.32137054, z: -0.0005106395, w: 0.67914003}
+  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: 0.35372218}
+  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: -0.0006743747}
+  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: 0.35372218}
+  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: -0.0006743747}
+  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.40248248}
+  - {x: 0.19768287, y: 0.1977421, z: 0.8041183, w: 0.40248248}
+  - {x: 0.19768289, y: 0.19774212, z: 0.61575973, w: 0.1951441}
+  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: 0.35372218}
+  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.4000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.4000373}
+  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.000037265323}
   - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.6000373}
-  - {x: 0.19918868, y: 0.19924836, z: 0.00003686376, w: 0.7987362}
-  - {x: 0.19768287, y: 0.1977421, z: 0.1883951, w: 0.80492854}
+  - {x: 0.19918868, y: 0.19924834, z: 0.56941676, w: 0.6021422}
+  - {x: 0.19918868, y: 0.19924836, z: 0.18983017, w: 0.40554833}
+  - {x: 0.19768287, y: 0.1977421, z: 0.00003658501, w: 0.80492854}
   - {x: 0.1795375, y: 0.1795913, z: 0.5592388, w: 0.80622715}
-  - {x: 0.058296435, y: 0.058307014, z: 0.5597124, w: 0.22085117}
-  - {x: 0.058296427, y: 0.058307007, z: 0.6178578, w: 0.22085117}
-  - {x: 0.19918868, y: 0.19924836, z: 0.18983017, w: 0.7987362}
-  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.5975902}
+  - {x: 0.19918868, y: 0.19924836, z: 0.37962347, w: 0.40554833}
+  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.79269797}
   - {x: 0.1795375, y: 0.1795913, z: 0.779636, w: 0.80622715}
   - {x: 0.32136932, y: 0.32137045, z: 0.66645694, w: -0.00051064376}
-  - {x: 0.19768289, y: 0.19774212, z: 0.8041183, w: 0.1951441}
-  - {x: 0.19768287, y: 0.1977421, z: 0.8041183, w: 0.40248248}
-  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.20003727}
-  - {x: 0.20263973, y: 0.20270044, z: 0.77236384, w: 0.000037265323}
+  - {x: 0.19768289, y: 0.19774212, z: 0.8041183, w: 0.00003635356}
+  - {x: 0.19768287, y: 0.1977421, z: 0.37675366, w: 0.80492854}
   - {x: 0.20263973, y: 0.20270044, z: 0.5792822, w: 0.000037265323}
-  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.000037265323}
-  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.6000373}
-  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.000037265323}
-  - {x: 0.6186824, y: 0.61781883, z: -0.0017004475, w: 0.40074918}
+  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.7987361}
+  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.000037265323}
+  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.6021422}
+  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.20003727}
+  - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.4000373}
+  - {x: 0.6233951, y: 0.622525, z: -0.0017134005, w: -0.0017098713}
   - {x: 0.36062923, y: 0.36068302, z: 0.34146306, w: 0.35372218}
   - {x: 0.19918868, y: 0.19924834, z: 0.56941676, w: 0.40554833}
-  - {x: 0.19918868, y: 0.19924834, z: 0.56941676, w: 0.7987361}
-  - {x: 0.220652, y: 0.22065164, z: 0.22026987, w: 0.73088336}
-  - {x: 0.32136938, y: 0.3213705, z: 0.34636182, w: -0.000510644}
-  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.79269797}
-  - {x: 0.1991887, y: 0.19924837, z: 0.81024355, w: 0.000036630543}
-  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.40554833}
-  - {x: 0.19918868, y: 0.19924834, z: 0.56941676, w: 0.6021422}
-  - {x: 0.19918868, y: 0.19924836, z: 0.37962347, w: 0.40554833}
-  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: -0.00050367333}
-  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: 0.3538929}
-  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.4000373}
   - {x: 0.20263973, y: 0.20270044, z: 0.000037502447, w: 0.80003726}
-  - {x: 0.36062926, y: 0.36068305, z: 0.34146306, w: -0.0006743747}
-  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.80003726}
-  bakedVertexOffset: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  - {x: 0.220652, y: 0.22065164, z: -0.00012737681, w: 0.73088336}
+  - {x: 0.32136938, y: 0.3213705, z: 0.34636182, w: -0.000510644}
+  - {x: 0.19768287, y: 0.1977421, z: 0.61575973, w: 0.5975902}
+  - {x: 0.19768287, y: 0.1977421, z: 0.8041183, w: 0.79269797}
+  - {x: 0.19918868, y: 0.19924834, z: 0.75921005, w: 0.40554833}
+  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.000037265323}
+  - {x: 0.19918868, y: 0.19924836, z: 0.00003686376, w: 0.6021423}
+  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: 0.3538929}
+  - {x: 0.31698233, y: 0.3169835, z: 0.6837708, w: -0.00050367333}
+  - {x: 0.20263973, y: 0.20270044, z: 0.38620067, w: 0.000037265323}
+  - {x: 0.19918868, y: 0.19924834, z: 0.56941676, w: 0.7987361}
+  - {x: 0.36062926, y: 0.36068305, z: -0.0006741646, w: -0.0006743747}
+  - {x: 0.20263973, y: 0.20270044, z: 0.19311908, w: 0.20003727}
+  bakedVertexOffset: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   bakedVertexColorMesh:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -8485,7 +8341,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1661243787
+--- !u!114 &1637505091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8495,23 +8351,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: probes
+  m_Name: Lanes Level Scarmez_LMA4
   m_EditorClassIdentifier: 
-  resolution: 16
+  resolution: 2048
   bitmask: 1
-  id: 7
-  sortingID: 0
+  id: 4
+  sortingID: 5
   isImplicit: 1
   area: 0
-  totalVertexCount: 248
+  totalVertexCount: 0
   vertexCounter: 0
   sceneLodLevel: -1
   sceneName: 
   containsTerrains: 0
-  probes: 1
-  mode: 2
+  probes: 0
+  mode: 1
   renderMode: 1000
-  renderDirMode: 5
+  renderDirMode: 1000
   atlasPacker: 1000
   computeSSS: 0
   sssSamples: 16
@@ -8542,27 +8398,27 @@ PrefabInstance:
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.36062926
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.36068305
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.38620067
+      value: 0.34146306
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.20003727
+      value: 0.35372218
       objectReference: {fileID: 0}
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8592,7 +8448,7 @@ PrefabInstance:
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.67914003
+      value: 0.35879079
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8602,27 +8458,27 @@ PrefabInstance:
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.36062926
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.36068305
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5792822
+      value: -0.0006741646
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6000373
+      value: -0.0006743747
       objectReference: {fileID: 0}
     - target: {fileID: 3999185309057986018, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8662,12 +8518,12 @@ PrefabInstance:
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.34146306
+      value: -0.0006741646
       objectReference: {fileID: 0}
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: -0.0006743747
+      value: 0.35372218
       objectReference: {fileID: 0}
     - target: {fileID: 5935801954632665176, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8762,7 +8618,7 @@ PrefabInstance:
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8777,7 +8633,7 @@ PrefabInstance:
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: -0.0006741646
+      value: 0.34146306
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -8812,7 +8668,7 @@ PrefabInstance:
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.35879079
+      value: 0.67914003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f324ffc3bf483645b50e555ce9183f5, type: 3}
@@ -9011,12 +8867,12 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.00003658501
+      value: 0.8041183
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80492854
+      value: 0.40248248
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -9046,12 +8902,12 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.8041183
+      value: 0.61575973
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.00003635356
+      value: 0.1951441
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -9081,12 +8937,12 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.8041183
+      value: 0.61575973
       objectReference: {fileID: 0}
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.5975902
+      value: 0.40248248
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -9182,12 +9038,12 @@ PrefabInstance:
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.000037502447
+      value: 0.77236384
       objectReference: {fileID: 0}
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.20003727
+      value: 0.000037265323
       objectReference: {fileID: 0}
     - target: {fileID: 2057894721228585356, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9257,27 +9113,27 @@ PrefabInstance:
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.19918868
       objectReference: {fileID: 0}
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.19924834
       objectReference: {fileID: 0}
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.000037502447
+      value: 0.56941676
       objectReference: {fileID: 0}
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6000373
+      value: 0.6021422
       objectReference: {fileID: 0}
     - target: {fileID: 3658059173252625924, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9307,7 +9163,7 @@ PrefabInstance:
     - target: {fileID: 3658059173252625924, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.4000373
+      value: 0.6000373
       objectReference: {fileID: 0}
     - target: {fileID: 4108870814364087217, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9332,27 +9188,27 @@ PrefabInstance:
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.19918868
+      value: 0.36062926
       objectReference: {fileID: 0}
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.19924834
+      value: 0.36068305
       objectReference: {fileID: 0}
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.75921005
+      value: -0.0006741646
       objectReference: {fileID: 0}
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6021422
+      value: 0.35372218
       objectReference: {fileID: 0}
     - target: {fileID: 6737795153096470287, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9382,12 +9238,12 @@ PrefabInstance:
     - target: {fileID: 7908363879753492392, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.000037502447
+      value: 0.38620067
       objectReference: {fileID: 0}
     - target: {fileID: 7908363879753492392, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.000037265323
+      value: 0.4000373
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9397,27 +9253,27 @@ PrefabInstance:
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.19918868
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.19924834
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.75921005
+      value: 0.19311908
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.7987361
+      value: 0.4000373
       objectReference: {fileID: 0}
     - target: {fileID: 8650232473918563634, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -9519,6 +9375,43 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1729880973}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1832724970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: Lanes Level Scarmez_LM0
+  m_EditorClassIdentifier: 
+  resolution: 4096
+  bitmask: 1
+  id: 0
+  sortingID: 1
+  isImplicit: 1
+  area: 61079.516
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
 --- !u!1001 &1844492761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9604,7 +9497,7 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.1883951
+      value: 0.00003658501
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -9674,12 +9567,12 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.00003686376
+      value: 0.18983017
       objectReference: {fileID: 0}
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.7987362
+      value: 0.40554833
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -9740,43 +9633,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1844492761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1856517920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: level_lanes_LMA3
-  m_EditorClassIdentifier: 
-  resolution: 4096
-  bitmask: 1
-  id: 3
-  sortingID: 4
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
 --- !u!1 &1896717625
 GameObject:
   m_ObjectHideFlags: 0
@@ -10015,18 +9871,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1901665628}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1901665630 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8288046866327176427, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1901665628}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1901665631 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4423147008990440346, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1901665628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1942528888
 GameObject:
   m_ObjectHideFlags: 0
@@ -10233,18 +10077,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1982956023}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1982956025 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8288046866327176427, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1982956023}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1982956026 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4423147008990440346, guid: 7dc7e4650bbfbf2498edbe1b5ebed5f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1982956023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2031716506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10335,7 +10167,7 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.5975902
+      value: 0.79269797
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -10400,12 +10232,12 @@ PrefabInstance:
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.18983017
+      value: 0.37962347
       objectReference: {fileID: 0}
     - target: {fileID: 5275743886560563628, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.7987362
+      value: 0.40554833
       objectReference: {fileID: 0}
     - target: {fileID: 6362684969501400585, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -10566,12 +10398,12 @@ PrefabInstance:
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.8041183
+      value: 0.37675366
       objectReference: {fileID: 0}
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.40248248
+      value: 0.80492854
       objectReference: {fileID: 0}
     - target: {fileID: 6813091431190877692, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
@@ -10611,7 +10443,7 @@ PrefabInstance:
     - target: {fileID: 8126714433713740404, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.1951441
+      value: 0.00003635356
       objectReference: {fileID: 0}
     - target: {fileID: 8383049569194829346, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
@@ -10707,27 +10539,27 @@ PrefabInstance:
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.19918868
       objectReference: {fileID: 0}
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.19924834
       objectReference: {fileID: 0}
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.38620067
+      value: 0.75921005
       objectReference: {fileID: 0}
     - target: {fileID: 1679474372677205049, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.000037265323
+      value: 0.6021422
       objectReference: {fileID: 0}
     - target: {fileID: 2057894721228585356, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -10812,12 +10644,12 @@ PrefabInstance:
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.19311908
+      value: 0.000037502447
       objectReference: {fileID: 0}
     - target: {fileID: 3228605576874193195, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.000037265323
+      value: 0.4000373
       objectReference: {fileID: 0}
     - target: {fileID: 3658059173252625924, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -10842,12 +10674,12 @@ PrefabInstance:
     - target: {fileID: 3658059173252625924, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.19311908
+      value: 0.000037502447
       objectReference: {fileID: 0}
     - target: {fileID: 3658059173252625924, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6000373
+      value: 0.20003727
       objectReference: {fileID: 0}
     - target: {fileID: 4108870814364087217, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -10887,12 +10719,12 @@ PrefabInstance:
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.19311908
+      value: 0.5792822
       objectReference: {fileID: 0}
     - target: {fileID: 6215206827095304890, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.20003727
+      value: 0.000037265323
       objectReference: {fileID: 0}
     - target: {fileID: 6737795153096470287, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -10922,7 +10754,7 @@ PrefabInstance:
     - target: {fileID: 7908363879753492392, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.5792822
+      value: 0.000037502447
       objectReference: {fileID: 0}
     - target: {fileID: 7908363879753492392, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -10937,27 +10769,27 @@ PrefabInstance:
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.19918868
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.19924834
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.77236384
+      value: 0.75921005
       objectReference: {fileID: 0}
     - target: {fileID: 8343588776031166599, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.000037265323
+      value: 0.7987361
       objectReference: {fileID: 0}
     - target: {fileID: 8650232473918563634, guid: 5543de6d97ebf9144a8821c363fae24c,
         type: 3}
@@ -11287,27 +11119,27 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.19918868
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.19924834
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.56941676
+      value: 0.000037502447
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.7987361
+      value: 0.80003726
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -11433,7 +11265,7 @@ PrefabInstance:
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.22026987
+      value: -0.00012737681
       objectReference: {fileID: 0}
     - target: {fileID: 1141383092098828097, guid: c0191452bab9ce94f8f03abb22affa88,
         type: 3}
@@ -11610,27 +11442,27 @@ PrefabInstance:
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.1991887
+      value: 0.19768287
       objectReference: {fileID: 0}
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.19924837
+      value: 0.1977421
       objectReference: {fileID: 0}
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.81024355
+      value: 0.8041183
       objectReference: {fileID: 0}
     - target: {fileID: 4949898765389140493, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.000036630543
+      value: 0.79269797
       objectReference: {fileID: 0}
     - target: {fileID: 6813091431190877692, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
@@ -11670,7 +11502,7 @@ PrefabInstance:
     - target: {fileID: 8126714433713740404, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.79269797
+      value: 0.5975902
       objectReference: {fileID: 0}
     - target: {fileID: 8383049569194829346, guid: 727921d1c5449d049a3e0584c9a9cc4c,
         type: 3}
@@ -11816,27 +11648,27 @@ PrefabInstance:
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.19918868
+      value: 0.20263973
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.19924834
+      value: 0.20270044
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.56941676
+      value: 0.19311908
       objectReference: {fileID: 0}
     - target: {fileID: 1599652526369128448, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.6021422
+      value: 0.000037265323
       objectReference: {fileID: 0}
     - target: {fileID: 2157987475408618933, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -11866,12 +11698,12 @@ PrefabInstance:
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.37962347
+      value: 0.00003686376
       objectReference: {fileID: 0}
     - target: {fileID: 3727189505998244413, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.40554833
+      value: 0.6021423
       objectReference: {fileID: 0}
     - target: {fileID: 4069017965740560264, guid: 58e484238e3785242a6ceddbf9e13a75,
         type: 3}
@@ -11987,7 +11819,7 @@ PrefabInstance:
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12002,7 +11834,7 @@ PrefabInstance:
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.34146306
+      value: -0.0006741646
       objectReference: {fileID: 0}
     - target: {fileID: 1333580505484471697, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12037,7 +11869,7 @@ PrefabInstance:
     - target: {fileID: 2478903932344785342, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: -0.00050367333
+      value: 0.3538929
       objectReference: {fileID: 0}
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12067,7 +11899,7 @@ PrefabInstance:
     - target: {fileID: 2807894778135422440, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80003726
+      value: 0.20003727
       objectReference: {fileID: 0}
     - target: {fileID: 3999185309057986018, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12107,12 +11939,12 @@ PrefabInstance:
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.19311908
+      value: 0.38620067
       objectReference: {fileID: 0}
     - target: {fileID: 4907522765125439461, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.4000373
+      value: 0.000037265323
       objectReference: {fileID: 0}
     - target: {fileID: 5935801954632665176, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12207,27 +12039,27 @@ PrefabInstance:
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapIndex
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.x
-      value: 0.20263973
+      value: 0.19918868
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.y
-      value: 0.20270044
+      value: 0.19924834
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.z
-      value: 0.000037502447
+      value: 0.56941676
       objectReference: {fileID: 0}
     - target: {fileID: 8101259946829006748, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.80003726
+      value: 0.7987361
       objectReference: {fileID: 0}
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
@@ -12257,7 +12089,7 @@ PrefabInstance:
     - target: {fileID: 8429617470020697034, guid: 0f324ffc3bf483645b50e555ce9183f5,
         type: 3}
       propertyPath: m_LightmapTilingOffset.w
-      value: 0.3538929
+      value: -0.00050367333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f324ffc3bf483645b50e555ce9183f5, type: 3}
