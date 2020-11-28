@@ -6,6 +6,8 @@ using UnityEngine.AI;
 #pragma warning disable 649
 public class BotController : Damageable {
 
+    const float TIMEBETWEENTARGETSEARCHES = 1F;
+
     public PlayerBase owner;
     private NavMeshAgent navAgent;
     public Vector3 rallyPoint;
@@ -15,18 +17,34 @@ public class BotController : Damageable {
     [SerializeField] private Transform projectilePoint;
     public GameObject projectilePrefab;
     private Damageable currentTarget;
-    public float range = 60f;
-    private float attackTimer = 0f;
-    public float attackRate = 1f;
+    private WeaponData[] weapons;
+    private float range;
+    private float timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
+
+    public Weapon weapon1;
+    public Weapon weapon2;
+
+    public Bot botConfig;
 
     void Start() {
-        
+        weapons = new WeaponData[2];
     }
 
     public void Initialize() {
         Init(); // Damageable
         navAgent = GetComponent<NavMeshAgent>();
         currentTarget = null;
+    }
+
+    public void LoadBot() {
+        botConfig = GetComponent<Bot>();
+        weapon1.SetData(botConfig.weapon1);
+        weapon1.muzzle = botConfig.muzzle1;
+        weapon2.SetData(botConfig.weapon2);
+        weapon2.muzzle = botConfig.muzzle2;
+
+        range = Mathf.Max(weapon1 != null ? weapon1.data.range : 0f, weapon2 != null ? weapon2.data.range : 0f);
+
     }
 
     public void SetRally(Vector3 rally) {
@@ -38,7 +56,6 @@ public class BotController : Damageable {
 
         if (!isDead)
         {
-            attackTimer -= Time.deltaTime;
 
             if (currentTarget != null)
             {
@@ -64,14 +81,23 @@ public class BotController : Damageable {
                     float angle = 8;
                     if (Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle)
                     {
-                        if (attackTimer < 0f) Shoot();
+
+                        if(weapon1 != null)
+                            if(weapon1.canShoot())
+                                weapon1.Shoot();
+
+                        if(weapon2 != null)
+                            if(weapon2.canShoot())
+                                weapon2.Shoot();
+
                     }
                 }
             }
 
             // if you dont have a target, find one
-            if (currentTarget == null)
+            if (currentTarget == null && timeUntilNextSearch < 0f)
             {
+                timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
                 if (!FindTarget())
                 {
                     navAgent.SetDestination(rallyPoint);
@@ -81,12 +107,6 @@ public class BotController : Damageable {
         }
     }
 
-    private void Shoot() {
-        attackTimer = attackRate;
-        if(projectilePrefab == null) return;
-        Instantiate(projectilePrefab, projectilePoint.position, transform.rotation, null);
-
-    }
 
 
     private bool FindTarget() {

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -41,7 +41,15 @@ public class BotDispatcher : MonoBehaviour
     [Tooltip("Navigate NavPaths in the reverse direction")]
     [SerializeField] bool reverse = false;
 
+    [Tooltip("Used to set which path the new bots will follow.")]
     NavPath fixedNavPath = null;
+
+    [Tooltip("Player Controller")]
+    PlayerController player;
+
+    public void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    }
 
     public void DispatchBot(Bot bot)
     {
@@ -63,9 +71,9 @@ public class BotDispatcher : MonoBehaviour
     protected void InitBot(Bot bot)
     {
         Debug.Log($"InitNewBot({bot.name})");
-        NavMeshAgent agent = bot.GetComponent<NavMeshAgent>() ?? bot.gameObject.AddComponent<NavMeshAgent>();
-        agent.speed = bot.chassis.speed;
-        agent.angularSpeed = bot.chassis.turnSpeed;
+        BotController controller = bot.gameObject.AddComponent<BotController>();
+        controller.LoadBot();
+        player.bots.Add(controller);
     }
 
     public void SetFixedLane(NavPath navPath)
