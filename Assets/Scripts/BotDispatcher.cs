@@ -36,10 +36,12 @@ public class BotDispatcher : MonoBehaviour
     [SerializeField] Transform origin;
 
     [Tooltip("Bots will randomly select one of these nav paths to follow (or patrol if a looping NavPath is selected)")]
-    [SerializeField] NavPath[] navPaths;
+    public NavPath[] navPaths;
 
     [Tooltip("Navigate NavPaths in the reverse direction")]
     [SerializeField] bool reverse = false;
+
+    NavPath fixedNavPath = null;
 
     public void DispatchBot(Bot bot)
     {
@@ -47,7 +49,7 @@ public class BotDispatcher : MonoBehaviour
         InitBot(bot);
 
         // select a random path
-        NavPath navPath = navPaths[Random.Range(0, navPaths.Length)];
+        NavPath navPath = fixedNavPath ?? navPaths[Random.Range(0, navPaths.Length)];
 
         // set starting position
         bot.transform.position = origin != null ? origin.position : navPath.GetPosition(reverse ? -1 : 0);
@@ -64,6 +66,12 @@ public class BotDispatcher : MonoBehaviour
         NavMeshAgent agent = bot.GetComponent<NavMeshAgent>() ?? bot.gameObject.AddComponent<NavMeshAgent>();
         agent.speed = bot.chassis.speed;
         agent.angularSpeed = bot.chassis.turnSpeed;
+    }
+
+    public void SetFixedLane(NavPath navPath)
+    {
+        fixedNavPath = navPath;
+        Debug.Log($"Lane set to {navPath.name}");
     }
 }
 
