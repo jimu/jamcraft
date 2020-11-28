@@ -44,13 +44,6 @@ public class BotDispatcher : MonoBehaviour
     [Tooltip("Used to set which path the new bots will follow.")]
     NavPath fixedNavPath = null;
 
-    [Tooltip("Player Controller")]
-    PlayerController player;
-
-    public void Start() {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-    }
-
     public void DispatchBot(Bot bot)
     {
         // Set speed
@@ -73,7 +66,7 @@ public class BotDispatcher : MonoBehaviour
         Debug.Log($"InitNewBot({bot.name})");
         BotController controller = bot.gameObject.AddComponent<BotController>();
         controller.LoadBot();
-        player.bots.Add(controller);
+        GameManager.Instance.player.bots.Add(controller);
     }
 
     public void SetFixedLane(NavPath navPath)

@@ -17,7 +17,6 @@ public class BotController : Damageable {
     [SerializeField] private Transform projectilePoint;
     public GameObject projectilePrefab;
     private Damageable currentTarget;
-    private WeaponData[] weapons;
     private float range;
     private float timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
 
@@ -27,7 +26,7 @@ public class BotController : Damageable {
     public Bot botConfig;
 
     void Start() {
-        weapons = new WeaponData[2];
+
     }
 
     public void Initialize() {
@@ -38,12 +37,12 @@ public class BotController : Damageable {
 
     public void LoadBot() {
         botConfig = GetComponent<Bot>();
-        weapon1.SetData(botConfig.weapon1);
-        weapon1.muzzle = botConfig.muzzle1;
-        weapon2.SetData(botConfig.weapon2);
-        weapon2.muzzle = botConfig.muzzle2;
+//        weapon1.SetData(botConfig.weapon1);
+//        weapon1.muzzle = botConfig.muzzle1;
+//        weapon2.SetData(botConfig.weapon2);
+//        weapon2.muzzle = botConfig.muzzle2;
 
-        range = Mathf.Max(weapon1 != null ? weapon1.data.range : 0f, weapon2 != null ? weapon2.data.range : 0f);
+//        range = Mathf.Max(weapon1 != null ? weapon1.data.range : 0f, weapon2 != null ? weapon2.data.range : 0f);
 
     }
 
