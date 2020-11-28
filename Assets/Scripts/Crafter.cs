@@ -204,6 +204,7 @@ public class Crafter : MonoSingleton<Crafter>
             WeaponData weaponData = item.Data as WeaponData;
             Transform pivot = botData.transform.Find(hardpointName);
             GameObject o = PoolManager.Instance.Get(weaponData.prefab, pivot);
+            Debug.Assert(o.GetComponent<Weapon>() != null, "Weapon Prefab requires Weapon Component");
             botData.muzzle1 = o.GetComponent<Weapon>().muzzle;
             DestroyImmediate(item.gameObject);
             return weaponData;
@@ -237,42 +238,6 @@ void ConstructBotFromParts(Item chassis, Item weapon1, Item weapon2, Item armour
         botData.weapon1 = AttachWeapon(botObject, "WeaponHardpoint1", weapon1, botData);
         botData.weapon2 = AttachWeapon(botObject, "WeaponHardpoint2", weapon2, botData);
         botData.armour  = AttachArmour(botObject, "ArmourHardpoint",  armour,  botData);
-        /*
-        if (chassisData.weaponHardpoint != "" && weapon1 != null)
-        {
-            WeaponData weaponData = weapon1.Data as WeaponData;
-            Transform pivot = botObject.transform.Find(chassisData.weaponHardpoint);
-            GameObject o = PoolManager.Instance.Get(weaponData.prefab, pivot);
-            botData.muzzle1 = o.GetComponent<Weapon>().muzzle;
-            //if (weaponData.fireRate > 0)
-                //pivot.gameObject.AddComponent<DebugTurretRotator>();
-            DestroyImmediate(weapon1.gameObject);
-            botData.weapon1 = weaponData;
-        }
-        if (chassisData.weaponHardpoint2 != "" && weapon2 != null)
-        {
-            WeaponData weaponData = weapon2.Data as WeaponData;
-            Transform pivot = botObject.transform.Find(chassisData.weaponHardpoint2);
-            GameObject o = PoolManager.Instance.Get(weaponData.prefab, pivot);
-            botData.muzzle2 = o.transform.Find("firePointA");
-
-            //if (weaponData.fireRate > 0)
-            //pivot.gameObject.AddComponent<DebugTurretRotator>();
-            DestroyImmediate(weapon2.gameObject);
-            botData.weapon2 = weaponData;
-        }
-        if (chassisData.armourHardpoint != "" && armour != null)
-        {
-            ArmourData armourData = armour.Data as ArmourData;
-            Transform pivot = botObject.transform.Find(chassisData.armourHardpoint);
-            PoolManager.Instance.Get(armourData.prefab, pivot);
-            DestroyImmediate(armour.gameObject);
-            botData.armour = armourData;
-        }
-
-        if (botData.weapon1 || botData.weapon2)
-            botObject.AddComponent<Targeter>();
-        */
         DestroyImmediate(chassis.gameObject);
         RefreshOutput();
         onNewBot?.Invoke(botData);

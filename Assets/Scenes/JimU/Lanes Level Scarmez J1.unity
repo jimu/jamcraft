@@ -10294,6 +10294,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 092b48392ce50324caea1c173a9f5f2d, type: 2}
   - {fileID: 11400000, guid: 24d06165bb02ecd4192cdfb2d9ab0975, type: 2}
   - {fileID: 11400000, guid: 5ca970e72325fbd468e6ae781af5e5b9, type: 2}
+  - {fileID: 11400000, guid: 6eb954b2411693a4eb62c0ce305fe99e, type: 2}
+  - {fileID: 11400000, guid: 627ba9c41f5c8cb40925c8dee77f5fa8, type: 2}
   multipleReward:
   - {fileID: 11400000, guid: 10dbd5c55f9d7a2428d52d0a6b72115a, type: 2}
   - {fileID: 11400000, guid: 092b48392ce50324caea1c173a9f5f2d, type: 2}
