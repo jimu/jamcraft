@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19443a0b731bf4c4e9551ae3c86a0ce5, type: 3}
+  m_Name: Leg3
+  m_EditorClassIdentifier: 
+  description: Legs 3
+  alwaysUseDescription: 1
+  craftingPriority: 4444
+  ingredients:
+  - {fileID: 11400000, guid: 1db02b9442a5d9b49925312a35119753, type: 2}
+  - {fileID: 11400000, guid: 5a99af1ce5226854caa8a2ede747bef6, type: 2}
+  - {fileID: 11400000, guid: 26f6679f66311764fb8025a8426f731f, type: 2}
+  icon32: {fileID: 0}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: c0a5b78d69c92164ebc322dea51b1ceb, type: 3}
+  locomotionName: Leg3
+  prefab: {fileID: 387801354059256756, guid: 51aa44735e29620499d52d6e222b679b, type: 3}
+  weaponHardpoint: weaponmountR
+  weaponHardpoint2: weaponmountL
+  armourHardpoint: armourmount
+  speed: 6
+  turnSpeed: 60
