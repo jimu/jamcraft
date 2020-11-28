@@ -18600,6 +18600,7 @@ GameObject:
   - component: {fileID: 8031430190944826559}
   - component: {fileID: 796139062035265541}
   - component: {fileID: -7944558999722002662}
+  - component: {fileID: -714648412953305002}
   m_Layer: 14
   m_Name: enemybot_root
   m_TagString: Untagged
@@ -18690,14 +18691,37 @@ MonoBehaviour:
   alignment: 1
   maxHealth: 20
   currentHealth: 0
+  explodeTrigger: {fileID: 0}
   owner: {fileID: 0}
   rallyPoint: {x: 0, y: 0, z: 0}
   radius: 2
   projectilePoint: {fileID: 7225654765480132997}
   projectilePrefab: {fileID: 8037231264084636105, guid: db22fe05f41237547b3b0d3bd5d40378,
     type: 3}
-  range: 20
-  attackRate: 0.2
+  currentTarget: {fileID: 0}
+  range: 0
+  weapon1: {fileID: 0}
+  weapon2: {fileID: 0}
+  botConfig: {fileID: -714648412953305002}
+--- !u!114 &-714648412953305002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057739882562929835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2653fea343f62b4cb5ff0e5cbc41202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chassis: {fileID: 0}
+  weapon1: {fileID: 11400000, guid: 627ba9c41f5c8cb40925c8dee77f5fa8, type: 2}
+  weapon2: {fileID: 0}
+  armour: {fileID: 0}
+  owner: {fileID: 0}
+  muzzle1: {fileID: 0}
+  muzzle2: {fileID: 0}
 --- !u!1 &4069848344853993740
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,8 +16,8 @@ public class BotController : Damageable {
     [Header("Combat")]
     [SerializeField] private Transform projectilePoint;
     public GameObject projectilePrefab;
-    private Damageable currentTarget;
-    private float range;
+    [SerializeField] private Damageable currentTarget;
+    [SerializeField]private float range = 0;
     private float timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
 
     public Weapon weapon1;
@@ -26,7 +26,7 @@ public class BotController : Damageable {
     public Bot botConfig;
 
     void Start() {
-
+        if(botConfig != null) LoadBot();
     }
 
     public void Initialize() {
@@ -37,12 +37,30 @@ public class BotController : Damageable {
 
     public void LoadBot() {
         botConfig = GetComponent<Bot>();
-//        weapon1.SetData(botConfig.weapon1);
-//        weapon1.muzzle = botConfig.muzzle1;
-//        weapon2.SetData(botConfig.weapon2);
-//        weapon2.muzzle = botConfig.muzzle2;
+        if(botConfig.weapon1 != null) {
+            weapon1 = gameObject.AddComponent<Weapon>();
 
-//        range = Mathf.Max(weapon1 != null ? weapon1.data.range : 0f, weapon2 != null ? weapon2.data.range : 0f);
+            weapon1.SetData(botConfig.weapon1);
+
+            if(projectilePoint != null) {
+                weapon1.muzzle = projectilePoint;
+            } else {
+                weapon1.muzzle = botConfig.muzzle1;
+            }
+            if(weapon1.data.range > range) range = weapon1.data.range;
+        }
+
+        if(botConfig.weapon2 != null) {
+            weapon2 = gameObject.AddComponent<Weapon>();
+            weapon2.SetData(botConfig.weapon2);
+            if(projectilePoint != null) {
+                weapon2.muzzle = projectilePoint;
+            } else {
+                weapon2.muzzle = botConfig.muzzle1;
+            }
+            if(weapon2.data.range > range) range = weapon2.data.range;
+        }
+
 
     }
 
@@ -93,6 +111,7 @@ public class BotController : Damageable {
                 }
             }
 
+            timeUntilNextSearch -= Time.deltaTime;
             // if you dont have a target, find one
             if (currentTarget == null && timeUntilNextSearch < 0f)
             {
@@ -110,7 +129,7 @@ public class BotController : Damageable {
 
     private bool FindTarget() {
 
-        if(Vector3.Distance(transform.position, owner.opponent.homeBase.transform.position) + radius <= range) {
+        if(Vector3.Distance(transform.position, owner.opponent.homeBase.transform.position) + radius -100<= range) {
             currentTarget = owner.opponent.homeBase;
         } else {
             foreach(BotController opponentBot in owner.opponent.bots) {

@@ -15,6 +15,10 @@ public class Weapon : MonoBehaviour{
     private float attackCooldown;
     private float attackTimer;
 
+    private void Start() {
+        attackCooldown = 1f / data.fireRate;
+        attackTimer = 0f;
+    }
 
     public void SetData(WeaponData data)
     {
@@ -25,7 +29,7 @@ public class Weapon : MonoBehaviour{
 
     public void Shoot() {
         attackTimer = attackCooldown;
-        Instantiate(data.projectile, muzzle.position, muzzle.transform.rotation, null);
+        Instantiate(data.projectile.prefab, muzzle.position, muzzle.transform.rotation, null);
 
     }
 
