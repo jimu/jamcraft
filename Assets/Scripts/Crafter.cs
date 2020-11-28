@@ -229,9 +229,6 @@ public class Crafter : MonoSingleton<Crafter>
             botData.armour = armourData;
         }
 
-        if (botData.weapon1 || botData.weapon2)
-            bot.AddComponent<Targeter>();
-
         DestroyImmediate(chassis.gameObject);
         RefreshOutput();
         onNewBot?.Invoke(botData);
