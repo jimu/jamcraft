@@ -6,6 +6,20 @@ using UnityEngine;
 public class LaneSelector : MonoBehaviour
 {
     [SerializeField] BotDispatcher botDispatcher;
+    static readonly int MAX_HOTKEYS = 9;
+    int maxHotkeys;
+
+    private void Awake()
+    {
+        maxHotkeys = Mathf.Min(botDispatcher.navPaths.Length, MAX_HOTKEYS);
+    }
+
+    private void Update()
+    {
+        for (int i = 0; i < maxHotkeys; ++i)
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                botDispatcher.SetFixedLane(botDispatcher.navPaths[i]);
+    }
 
     private void OnGUI()
     {

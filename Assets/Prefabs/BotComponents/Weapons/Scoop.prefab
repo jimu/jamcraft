@@ -824,6 +824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2874641021981448234}
+  - component: {fileID: 6596484706923116270}
   m_Layer: 0
   m_Name: Scoop
   m_TagString: Untagged
@@ -846,6 +847,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6596484706923116270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309139030370681540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcec216a1f1d0e4ca05c757c3427d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 7225654765480132997, guid: 820e0492d838f7647815b53eb8ab72b2, type: 3}
+  data: {fileID: 11400000, guid: 382f597858e161e4ca81321cb9e90472, type: 2}
 --- !u!1 &2379523026298875548
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class PlayerController : PlayerBase {
 
 
         // testing building a bot
-        if(Input.GetKeyDown("1")) {
+        if(Input.GetKeyDown("p")) {
             BotController lastBot = Instantiate(defaultBotPrefab, homeBase.transform.position + (homeBase.transform.forward * 8), homeBase.transform.rotation, null).GetComponent<BotController>();
             bots.Add(lastBot);
             lastBot.Initialize();

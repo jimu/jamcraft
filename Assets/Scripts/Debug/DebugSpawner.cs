@@ -27,15 +27,15 @@ public class DebugSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha6))
             DebugSpawn(chassisData1, weaponData1);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha7))
             DebugSpawn(chassisData2, weaponData1);
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha8))
             DebugSpawn(chassisData2, weaponData2);
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha9))
             DebugSpawn(chassisData2, weaponData3);
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha0))
             DebugSpawn(chassisData3, null);
     }
 
