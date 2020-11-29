@@ -29,3 +29,4 @@ MonoBehaviour:
   armourHardpoint: 
   speed: 15
   turnSpeed: 180
+  maxHealth: 5

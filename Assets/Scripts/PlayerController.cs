@@ -19,14 +19,6 @@ public class PlayerController : PlayerBase {
 
         UpdateBots();
 
-        // Left click to rappy bots
-        if(Input.GetMouseButtonDown(0)) {
-
-
-
-        }
-
-
         // testing building a bot
         if(Input.GetKeyDown("p")) {
             BotController lastBot = Instantiate(defaultBotPrefab, homeBase.transform.position + (homeBase.transform.forward * 8), homeBase.transform.rotation, null).GetComponent<BotController>();

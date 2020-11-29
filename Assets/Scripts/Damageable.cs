@@ -10,7 +10,7 @@ public class Damageable : MonoBehaviour {
     public enum Alignment { PLAYER, CPU, NEUTRAL }
     public Alignment alignment;
     public float maxHealth;
-    public float currentHealth;
+    public float currentHealth = 1f;
     public GameObject explodeTrigger;
 
     public bool isDead {
@@ -28,6 +28,7 @@ public class Damageable : MonoBehaviour {
     }
 
     public float GetNormalizedHealth() {
+        if(currentHealth <= 0) return 0.001f;
         return currentHealth / maxHealth;
     }
 

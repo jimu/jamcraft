@@ -14,6 +14,7 @@ public class PlayerBase : MonoBehaviour {
         for(int i = bots.Count - 1; i >= 0; i--) {
 
             if(bots[i].isDead) {
+                Debug.Log(bots[i].transform.name + " Died");
                 GameObject bot = bots[i].gameObject;
                 bots.RemoveAt(i);
                 //Destroy(bot);   explode it instead and then wait 10 seconds before destroying the exploded bot

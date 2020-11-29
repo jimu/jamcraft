@@ -25,6 +25,8 @@ public class BotController : Damageable {
 
     public Bot botConfig;
 
+    private Rigidbody rb;
+
     void Start() {
         if(botConfig != null) LoadBot();
     }
@@ -33,6 +35,14 @@ public class BotController : Damageable {
         Init(); // Damageable
         navAgent = GetComponent<NavMeshAgent>();
         currentTarget = null;
+
+        rb = GetComponent<Rigidbody>();
+        if(rb == null) {
+            rb = gameObject.AddComponent<Rigidbody>();
+            rb.isKinematic = true;
+        }
+
+
     }
 
     public void LoadBot() {
@@ -60,6 +70,8 @@ public class BotController : Damageable {
             }
             if(weapon2.data.range > range) range = weapon2.data.range;
         }
+
+        currentHealth = 1f;
         Initialize();
 
         if(botConfig.chassis != null) {
@@ -68,6 +80,9 @@ public class BotController : Damageable {
             maxHealth = botConfig.chassis.maxHealth;
         }
 
+        
+
+        
 
     }
 

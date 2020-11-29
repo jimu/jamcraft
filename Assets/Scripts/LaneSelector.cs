@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,14 +11,14 @@ public class LaneSelector : MonoBehaviour
 
     private void Awake()
     {
-        maxHotkeys = Mathf.Min(botDispatcher.navPaths.Length, MAX_HOTKEYS);
+        maxHotkeys = Mathf.Min(botDispatcher.firstNodes.Length, MAX_HOTKEYS);
     }
 
     private void Update()
     {
         for (int i = 0; i < maxHotkeys; ++i)
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
-                botDispatcher.SetFixedLane(botDispatcher.navPaths[i]);
+                botDispatcher.SetFixedLane(i);
     }
 
     private void OnGUI()
@@ -26,9 +26,9 @@ public class LaneSelector : MonoBehaviour
         GUILayout.BeginArea((new Rect(Screen.width - 300 , 10, 100, 900)));
         GUILayout.BeginVertical("box", GUILayout.ExpandHeight(true));
 
-        foreach (NavPath lane in botDispatcher.navPaths)
-            if (GUILayout.Button($"{lane.name}"))
-                botDispatcher.SetFixedLane(lane);
+        for(int i = 0; i < botDispatcher.firstNodes.Length; i++)
+            if (GUILayout.Button($"{botDispatcher.firstNodes[i].transform.parent.name}"))
+                botDispatcher.SetFixedLane(i);
 
         GUILayout.BeginVertical();
         GUILayout.EndArea();

@@ -38,7 +38,7 @@ public class ProjectileBase : MonoBehaviour {
             damageable.alignment == Damageable.Alignment.CPU && CompareTag("Projectile-Friendly")))
         {
             damageable.Damage(damage);
-            Debug.Log($" {damageable.name} hit by {name} hits={damageable.currentHealth}/{damageable.maxHealth}");
+            //Debug.Log($" {damageable.name} hit by {name} hits={damageable.currentHealth}/{damageable.maxHealth}");
 
             if (CompareTag("Projectile-Friendly"))
             {

@@ -13,7 +13,7 @@ public class CPUController : PlayerBase {
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemySpawnTimer = enemySpawnRate;
     }
 
     // Update is called once per frame

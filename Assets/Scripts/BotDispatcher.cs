@@ -36,13 +36,13 @@ public class BotDispatcher : MonoBehaviour
     [SerializeField] Transform origin;
 
     [Tooltip("Bots will randomly select one of these nav paths to follow (or patrol if a looping NavPath is selected)")]
-    public NavPath[] navPaths;
+    public NavNode[] firstNodes;
 
     [Tooltip("Navigate NavPaths in the reverse direction")]
     [SerializeField] bool reverse = false;
 
     [Tooltip("Used to set which path the new bots will follow.")]
-    NavPath fixedNavPath = null;
+    NavNode fixedNavPath = null;
 
     public void DispatchBot(Bot bot)
     {
@@ -50,31 +50,31 @@ public class BotDispatcher : MonoBehaviour
         InitBot(bot);
 
         // select a random path
-        NavPath navPath = fixedNavPath ?? navPaths[Random.Range(0, navPaths.Length)];
-
         // set starting position
         bot.transform.position = GameManager.Instance.player.homeBase.transform.position + (GameManager.Instance.player.homeBase.transform.forward * 8);
         bot.transform.rotation = GameManager.Instance.player.homeBase.transform.rotation;
-        Debug.Log($"DispatchBot: I'm sending {bot.name} along NavPath {navPath.name}");
-        Navigator navigator = bot.GetComponent<Navigator>() ?? bot.gameObject.AddComponent<Navigator>();
-        navigator.SetNavPath(navPath);
-
+        
     }
 
     protected void InitBot(Bot bot)
     {
+
+        NavNode firstNode = fixedNavPath ?? firstNodes[Random.Range(0, firstNodes.Length)];
         Debug.Log($"InitNewBot({bot.name})");
         BotController controller = bot.gameObject.AddComponent<BotController>();
         controller.owner = GameManager.Instance.player;
         controller.LoadBot();
         controller.alignment = BotController.Alignment.PLAYER;
+        controller.currentHealth = 1f;
         GameManager.Instance.player.bots.Add(controller);
+        controller.SetRally(firstNode.GetRandomPointInNode());
+        Debug.Log($"DispatchBot: I'm sending {bot.name} along NavPath {firstNode.transform.parent.name}");
     }
 
-    public void SetFixedLane(NavPath navPath)
+    public void SetFixedLane(int pathNum)
     {
-        fixedNavPath = navPath;
-        Debug.Log($"Lane set to {navPath.name}");
+        fixedNavPath = firstNodes[pathNum];
+        Debug.Log($"Lane set to {firstNodes[pathNum].transform.parent.name}");
     }
 }
 
