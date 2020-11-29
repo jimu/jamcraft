@@ -9134,7 +9134,7 @@ MonoBehaviour:
   renderSettingsHackEmissiveBoost: 1
   renderSettingsHackIndirectBoost: 1
   renderSettingsTempPath: 
-  renderSettingsOutPath: Scenes/level_lanes
+  renderSettingsOutPath: Scenes/JimU/Lanes Level Scarmez J1
   renderSettingsUseScenePath: 1
   renderSettingsHackAOIntensity: 1
   renderSettingsHackAOSamples: 16
@@ -14859,6 +14859,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070961775720314264, guid: 267007dd5c21ab84baa10d3d0ef34ab7,
+        type: 3}
+      propertyPath: m_ShowCustomSorter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070961775720314264, guid: 267007dd5c21ab84baa10d3d0ef34ab7,
+        type: 3}
+      propertyPath: antialiasingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 267007dd5c21ab84baa10d3d0ef34ab7, type: 3}
