@@ -7,8 +7,10 @@ public class LaneSelector : MonoBehaviour
 {
     [SerializeField] BotDispatcher botDispatcher;
 
-    [Tooltip("World GameObject that indicates the currently selected lane")]
-    [SerializeField] LaneIndicator laneIndicator;
+    [Tooltip("Prefab to load from the Resources folder")]
+    [SerializeField] string prefabResource = "LaneIndicator";
+    [SerializeField] float indicatorSpeed = 20f;
+    LaneIndicator laneIndicator;
 
     static readonly int MAX_HOTKEYS = 9;
     int maxHotkeys;
@@ -39,11 +41,19 @@ public class LaneSelector : MonoBehaviour
         GUILayout.EndArea();
     }
 
+    void InitLaneIndicator()
+    {
+        if (laneIndicator == null)
+            laneIndicator = Instantiate(Resources.Load<LaneIndicator>(prefabResource));
+        laneIndicator.speed = indicatorSpeed;
+    }
 
     private void SetLane(int n)
     {
-        Vector3 point1 = botDispatcher.firstNodes[n].transform.position;
-        Vector3 point2 = botDispatcher.firstNodes[n].nextNodeTowardCPU.transform.position;
+        InitLaneIndicator();
+
+        Vector3 point1 = botDispatcher.navPaths[n].GetPosition(0);
+        Vector3 point2 = botDispatcher.navPaths[n].GetPosition(1);
         laneIndicator.SetPositions(point1, point2);
 
         botDispatcher.SetFixedLane(n);
