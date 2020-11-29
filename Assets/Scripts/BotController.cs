@@ -60,6 +60,13 @@ public class BotController : Damageable {
             }
             if(weapon2.data.range > range) range = weapon2.data.range;
         }
+        Initialize();
+
+        if(botConfig.chassis != null) {
+            navAgent.speed = botConfig.chassis.speed;
+            navAgent.angularSpeed = botConfig.chassis.turnSpeed;
+            maxHealth = botConfig.chassis.maxHealth;
+        }
 
 
     }
@@ -74,39 +81,47 @@ public class BotController : Damageable {
         if (!isDead)
         {
 
+            
+
             if (currentTarget != null)
             {
 
-                // disengage if it is too far away
-                if (Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range)
+                if(currentTarget.isDead) 
                 {
                     currentTarget = null;
+                } else { 
 
-                }
-                else
-                {
+                    // disengage if it is too far away
+                    if (Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range)
+                    {
+                        currentTarget = null;
 
-                    navAgent.isStopped = true;
-
-                    // Look at the target
-                    Vector3 lookPos = currentTarget.transform.position - transform.position;
-                    lookPos.y = 0;
-                    Quaternion rotation = Quaternion.LookRotation(lookPos);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 2f * Time.deltaTime);
-
-                    // if the target is infront of the bot, shoot.
-                    float angle = 8;
-                    if (Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle)
+                    }
+                    else
                     {
 
-                        if(weapon1 != null)
-                            if(weapon1.canShoot())
-                                weapon1.Shoot();
+                        navAgent.isStopped = true;
 
-                        if(weapon2 != null)
-                            if(weapon2.canShoot())
-                                weapon2.Shoot();
+                        // Look at the target
+                        Vector3 lookPos = currentTarget.transform.position - transform.position;
+                        lookPos.y = 0;
+                        Quaternion rotation = Quaternion.LookRotation(lookPos);
+                        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 2f * Time.deltaTime);
 
+                        // if the target is infront of the bot, shoot.
+                        float angle = 8;
+                        if (Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle)
+                        {
+
+                            if(weapon1 != null)
+                                if(weapon1.canShoot())
+                                    weapon1.Shoot();
+
+                            if(weapon2 != null)
+                                if(weapon2.canShoot())
+                                    weapon2.Shoot();
+
+                        }
                     }
                 }
             }
@@ -120,6 +135,8 @@ public class BotController : Damageable {
                 {
                     navAgent.SetDestination(rallyPoint);
                     return;
+                } else {
+                    navAgent.SetDestination(rallyPoint);
                 }
             }
         }
@@ -129,7 +146,7 @@ public class BotController : Damageable {
 
     private bool FindTarget() {
 
-        if(Vector3.Distance(transform.position, owner.opponent.homeBase.transform.position) + radius -100<= range) {
+        if(Vector3.Distance(transform.position, owner.opponent.homeBase.transform.position) + radius <= range) {
             currentTarget = owner.opponent.homeBase;
         } else {
             foreach(BotController opponentBot in owner.opponent.bots) {

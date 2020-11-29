@@ -53,8 +53,8 @@ public class BotDispatcher : MonoBehaviour
         NavPath navPath = fixedNavPath ?? navPaths[Random.Range(0, navPaths.Length)];
 
         // set starting position
-        bot.transform.position = origin != null ? origin.position : navPath.GetPosition(reverse ? -1 : 0);
-
+        bot.transform.position = GameManager.Instance.player.homeBase.transform.position + (GameManager.Instance.player.homeBase.transform.forward * 8);
+        bot.transform.rotation = GameManager.Instance.player.homeBase.transform.rotation;
         Debug.Log($"DispatchBot: I'm sending {bot.name} along NavPath {navPath.name}");
         Navigator navigator = bot.GetComponent<Navigator>() ?? bot.gameObject.AddComponent<Navigator>();
         navigator.SetNavPath(navPath);
@@ -65,6 +65,7 @@ public class BotDispatcher : MonoBehaviour
     {
         Debug.Log($"InitNewBot({bot.name})");
         BotController controller = bot.gameObject.AddComponent<BotController>();
+        controller.owner = GameManager.Instance.player;
         controller.LoadBot();
         GameManager.Instance.player.bots.Add(controller);
     }

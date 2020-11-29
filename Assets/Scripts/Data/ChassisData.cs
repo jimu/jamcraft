@@ -29,4 +29,8 @@ public class ChassisData : CraftableData
 
     [Tooltip("Bot's angular turn speed when changing direction")]
     public float turnSpeed = 60;
+
+    [Tooltip("Bot's health")]
+    public float maxHealth = 20;
+
 }

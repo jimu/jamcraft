@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2467726343976541172}
   - component: {fileID: 9026615223709914598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 8352970893585767389}
   - component: {fileID: 4781183392222201434}
   - component: {fileID: 978707655018751665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 32002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 5759249982308884586}
   - component: {fileID: 1650915294997125291}
   - component: {fileID: 7525059601844547009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688749652675421114}
   - component: {fileID: 175190872059353468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768191211840138470}
   - component: {fileID: 2468055613364717255}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Connectivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5883660409464873319}
   - component: {fileID: 3815393910278865394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Custom2DField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295449500219776644}
   - component: {fileID: 8203324474238606221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 8941677803981157687}
   - component: {fileID: 7164608028665154118}
   - component: {fileID: 1326815552977315776}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 2257646462130744428}
   - component: {fileID: 427818460375608284}
   - component: {fileID: 5065615504572379615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 32002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 4723697117245384060}
   - component: {fileID: 1769458244092176861}
   - component: {fileID: 5345708077164806224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01 Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7872022330065707531}
   - component: {fileID: 2948566631859570012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2242421209461036416}
   - component: {fileID: 7532881358438662659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 32002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5704363534317024473}
   - component: {fileID: 311286991760215469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 5818420921513305802}
   - component: {fileID: 5142866732083293434}
   - component: {fileID: 6706223003607286036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7031624112813929285}
   - component: {fileID: 2291453967222300101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Custom2DField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 8614313559369993851}
   - component: {fileID: 1614539768154601067}
   - component: {fileID: 8792947400817327551}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VME_11003062_LEG_Front_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1204,7 +1204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4337518971948030316}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DecorationSurfaces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,7 +1237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8422628949682413950}
   - component: {fileID: 652823892781680933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Connectivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4320840830058756897}
   - component: {fileID: 7583988999846407998}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1334,7 @@ GameObject:
   - component: {fileID: 8494673788690507122}
   - component: {fileID: 2766044558785331580}
   - component: {fileID: 1433507064649343919}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: hollowKnobFitInPegHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   - component: {fileID: 5314791873200986669}
   - component: {fileID: 615994974987036691}
   - component: {fileID: 5041796141380788736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1479,7 +1479,7 @@ GameObject:
   - component: {fileID: 8412673181302830190}
   - component: {fileID: 7366980328736142671}
   - component: {fileID: 3720880913315285668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01 Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1581,7 +1581,7 @@ GameObject:
   - component: {fileID: 5947736394216009750}
   - component: {fileID: 4710313399439437198}
   - component: {fileID: 2017783071018393685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VME_11003062_LEG_Front_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 6480084924610176422}
   - component: {fileID: 6862605951244145458}
   - component: {fileID: 8336070152284573093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VME_11003062_LEG_Back_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1737,7 +1737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215429364147690856}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1769,7 +1769,7 @@ GameObject:
   - component: {fileID: 6291479753722548668}
   - component: {fileID: 1222603729279410744}
   - component: {fileID: 1242542091923679961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VME_11003062_LEG_Back_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1846,7 +1846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845903130010692647}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1881,7 +1881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 255373693389187082}
   - component: {fileID: 1664402155815294292}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1925,7 +1925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566492522536182548}
   - component: {fileID: 6846178520063813663}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5609336687846758848}
   - component: {fileID: 3193811928839376714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,7 +2013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4274624233455084362}
   - component: {fileID: 6538560806906559095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2056,7 +2056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7373972029910212073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DecorationSurfaces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887287652675621996}
   - component: {fileID: 421072618937634460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Custom2DField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2148,7 +2148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5230194503436564901}
   - component: {fileID: 615697040955844586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995733322121487979}
   - component: {fileID: 8207620620644849758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9157092836904333032}
   - component: {fileID: 4836011520936251090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4464526431498210405}
   - component: {fileID: 5551223052799540964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2324,7 +2324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913576472954817741}
   - component: {fileID: 5822439979494749107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Connectivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2375,7 +2375,7 @@ GameObject:
   - component: {fileID: 8342803216575761941}
   - component: {fileID: 5598224320942952104}
   - component: {fileID: 4139839558706890680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01 Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2476,7 +2476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5461158761137400904}
   - component: {fileID: 5595499749234974971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Custom2DField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2534,7 +2534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2015733747731036867}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: firePointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 748817737917181434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4815016137388279561}
   - component: {fileID: 2505933518920377485}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2651,7 +2651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5292182634551149372}
   - component: {fileID: 3484191540317639620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,7 +2695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4362963391064003531}
   - component: {fileID: 2849374184609522375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2762,7 +2762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7461823225462023774}
   - component: {fileID: 111157657577432920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 32002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2821,7 +2821,7 @@ GameObject:
   - component: {fileID: 2552983855493713550}
   - component: {fileID: 4609278209370546314}
   - component: {fileID: 1724308125971866519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2963,7 +2963,7 @@ GameObject:
   - component: {fileID: 812566111352544101}
   - component: {fileID: 1122867153196253355}
   - component: {fileID: 4127552355075231168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3074,7 +3074,7 @@ GameObject:
   - component: {fileID: 4507439519354774263}
   - component: {fileID: 3680720247049469811}
   - component: {fileID: 7567264758768050617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3153,7 +3153,7 @@ GameObject:
   - component: {fileID: 8775970865827083784}
   - component: {fileID: 8796361093697401930}
   - component: {fileID: 7825327595752452817}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: hollowKnobFitInPegHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3216,7 +3216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5956909720256877959}
   - component: {fileID: 4611414463409194242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Connectivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3268,7 +3268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7323153458030289929}
   - component: {fileID: 3933374358231456684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6765465233559743395}
   - component: {fileID: 64438360724429033}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3356,7 +3356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6126824382217964753}
   - component: {fileID: 6502110034278270279}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3403,7 +3403,7 @@ GameObject:
   - component: {fileID: 4463228261941443035}
   - component: {fileID: 4238123257816204047}
   - component: {fileID: 4156429169110540929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01 Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3504,7 +3504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1938836488035010660}
   - component: {fileID: 5425160487349640673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3548,7 +3548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2828214408926858710}
   - component: {fileID: 214446045910910385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3591,7 +3591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6360974077554746592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3638,7 +3638,7 @@ GameObject:
   - component: {fileID: 9063021097720839914}
   - component: {fileID: 605724440604567889}
   - component: {fileID: 3244183496649735895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: blaster01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3748,7 +3748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8654082491188968089}
   - component: {fileID: 1684143460131235424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3791,7 +3791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566163487636618385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3822,7 +3822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5580594995379681910}
   - component: {fileID: 3556930547239207345}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +3867,7 @@ GameObject:
   - component: {fileID: 2092565188194564832}
   - component: {fileID: 7976064058800523107}
   - component: {fileID: 7895458936775921978}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3930,7 +3930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9213899478528856504}
   - component: {fileID: 6207338992640038068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collision Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,7 +3973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7175560227018528977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: firepointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4004,7 +4004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2673769429320596070}
   - component: {fileID: 7433755100723484202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4072,7 +4072,7 @@ GameObject:
   - component: {fileID: 2374603483164829544}
   - component: {fileID: 4169820546976457924}
   - component: {fileID: 6743155802384197124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
