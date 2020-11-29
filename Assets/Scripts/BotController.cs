@@ -106,7 +106,7 @@ public class BotController : Damageable {
                         Vector3 lookPos = currentTarget.transform.position - transform.position;
                         lookPos.y = 0;
                         Quaternion rotation = Quaternion.LookRotation(lookPos);
-                        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 2f * Time.deltaTime);
+                        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 3f * Time.deltaTime);
 
                         // if the target is infront of the bot, shoot.
                         float angle = 8;
@@ -136,7 +136,7 @@ public class BotController : Damageable {
                     navAgent.SetDestination(rallyPoint);
                     return;
                 } else {
-                    navAgent.SetDestination(rallyPoint);
+                    //navAgent.SetDestination(rallyPoint);
                 }
             }
         }

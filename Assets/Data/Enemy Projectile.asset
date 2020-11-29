@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy Projectile
   m_EditorClassIdentifier: 
   projectileName: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 8037231264084636105, guid: db22fe05f41237547b3b0d3bd5d40378, type: 3}
   impactVFX: {fileID: 0}
   impactSFX: {fileID: 0}
-  damage: 0
+  damage: 1

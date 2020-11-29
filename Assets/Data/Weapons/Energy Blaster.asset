@@ -24,7 +24,7 @@ MonoBehaviour:
   weaponName: Energy Blaster
   prefab: {fileID: 4057739882562929835, guid: 820e0492d838f7647815b53eb8ab72b2, type: 3}
   projectile: {fileID: 11400000, guid: c0792167e0c74094c9a0897598b9a06d, type: 2}
-  fireRate: 0.5
+  fireRate: 1
   range: 15
   fireVFX: {fileID: 0}
   fireSFX: {fileID: 8300000, guid: ccbb71e676eff044f87768862c5fc790, type: 3}

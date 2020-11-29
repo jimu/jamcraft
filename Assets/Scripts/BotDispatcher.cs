@@ -67,6 +67,7 @@ public class BotDispatcher : MonoBehaviour
         BotController controller = bot.gameObject.AddComponent<BotController>();
         controller.owner = GameManager.Instance.player;
         controller.LoadBot();
+        controller.alignment = BotController.Alignment.PLAYER;
         GameManager.Instance.player.bots.Add(controller);
     }
 
