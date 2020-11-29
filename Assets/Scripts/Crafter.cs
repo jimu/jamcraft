@@ -46,6 +46,11 @@ public class Crafter : MonoSingleton<Crafter>
     [SerializeField] CraftableData botOutputPlaceholderData;
     [SerializeField] FlyoutOutputPanel flyoutOutputPanel;
 
+    // Extra Output Button
+    [Header("Extra Output Flyout Button")]
+    [SerializeField] GameObject extraOutputButton;
+    [SerializeField] TextMeshProUGUI extraOutputText;
+
     List<CraftableData> suppliedOutputList = new List<CraftableData>();
 
     // sorted catalog
@@ -70,6 +75,9 @@ public class Crafter : MonoSingleton<Crafter>
             }
         }
 
+        SetExtraOutput(suppliedOutputList.Count);
+        UpdateOutputFlyout();
+
         if (suppliedOutputList.Count > 0)
         {
             return SetOutput(suppliedOutputList[0]);
@@ -77,6 +85,7 @@ public class Crafter : MonoSingleton<Crafter>
 
         Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
         return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
+
     }
 
     protected override void Init()
@@ -121,18 +130,25 @@ public class Crafter : MonoSingleton<Crafter>
         return output;
     }
 
-    public void Craft()
+    public void Craft(CraftableData data = null)
     {
-        Debug.Log($"I'm going to craft a {craftOutput.name} ({craftOutput.description})");
+        if (data)
+            SetOutput(data);
+        else
+            data = craftOutput;
 
-        ConsumeResources(craftOutput);
+        Debug.Log($"I'm going to craft a {data.name} ({data.description})");
+
+        ConsumeResources(data);
 
         if (craftOutput == botOutputPlaceholderData)
             ConstructBot();
         else
-            AddToInventory(craftOutput);
+            AddToInventory(data);
 
+        CloseFlyout();
         RefreshOutput();
+
     }
 
     // destroys workbench items in recipe
@@ -272,11 +288,13 @@ void ConstructBotFromParts(Item chassis, Item weapon1, Item weapon2, Item armour
     {
         foreach(CraftableData item in itemsData)
             AddToInventory(item);
+        UpdateOutputFlyout();
     }
 
     public void OutputClicked(CraftableData data)
     {
         CloseFlyout();
+        Craft(data);
         Debug.Log($"Crafter output: {data.name}");
     }
 
@@ -287,7 +305,22 @@ void ConstructBotFromParts(Item chassis, Item weapon1, Item weapon2, Item armour
 
     public void ActivateOutputFlyout()
     {
-        if (suppliedOutputList.Count > 0)
+        if (suppliedOutputList.Count > 1)
             flyoutOutputPanel.Activate(suppliedOutputList);
+        else
+            flyoutOutputPanel.Deactivate();
+    }
+
+    void UpdateOutputFlyout()
+    {
+        if (flyoutOutputPanel.isActiveAndEnabled)
+            ActivateOutputFlyout();
+    }
+
+    void SetExtraOutput(int count)
+    {
+        extraOutputButton.SetActive(count > 1);
+        if (count > 1)
+            extraOutputText.text = "+" + (count - 1).ToString();
     }
 }
