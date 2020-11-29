@@ -38,8 +38,7 @@ public class BotDispatcher : MonoBehaviour
     [Tooltip("Bots will randomly select one of these nav paths to follow (or patrol if a looping NavPath is selected)")]
     public NavNode[] firstNodes;
 
-    [Tooltip("Navigate NavPaths in the reverse direction")]
-    [SerializeField] bool reverse = false;
+    public NavPath[] navPaths;
 
     [Tooltip("Used to set which path the new bots will follow.")]
     NavNode fixedNavPath = null;

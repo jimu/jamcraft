@@ -3616,7 +3616,7 @@ MonoBehaviour:
   - {fileID: 1947125371}
   - {fileID: 1897403993}
   - {fileID: 1074789244}
-  reverse: 0
+  navPaths: []
 --- !u!114 &873367137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3630,6 +3630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botDispatcher: {fileID: 873367136}
+  laneIndicator: {fileID: 0}
 --- !u!224 &896852272 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2449077558946979747, guid: de4e7541523a3524bbeb8a86835058f8,

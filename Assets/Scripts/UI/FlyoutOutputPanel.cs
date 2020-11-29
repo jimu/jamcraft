@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable 649,414
 public class FlyoutOutputPanel : MonoBehaviour
 {
 
