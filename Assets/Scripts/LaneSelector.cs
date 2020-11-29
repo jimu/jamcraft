@@ -50,10 +50,11 @@ public class LaneSelector : MonoBehaviour
 
     private void SetLane(int n)
     {
-        InitLaneIndicator();
+        InitLaneIndicator(); 
+        
+        Vector3 point1 = botDispatcher.firstNodes[n].transform.position;
+        Vector3 point2 = botDispatcher.firstNodes[n].nextNodeTowardCPU.transform.position;
 
-        Vector3 point1 = botDispatcher.navPaths[n].GetPosition(0);
-        Vector3 point2 = botDispatcher.navPaths[n].GetPosition(1);
         laneIndicator.SetPositions(point1, point2);
 
         botDispatcher.SetFixedLane(n);
