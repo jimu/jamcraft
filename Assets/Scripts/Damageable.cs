@@ -36,8 +36,8 @@ public class Damageable : MonoBehaviour {
         if (explodeTrigger != null)
             explodeTrigger.SetActive(true);
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        if (agent)
-            agent.isStopped = true;
+        //if (agent)
+        //    agent.isStopped = true;
         gameObject.SetActive(false);
     }
 }

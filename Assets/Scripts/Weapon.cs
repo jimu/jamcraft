@@ -29,6 +29,7 @@ public class Weapon : MonoBehaviour{
 
     public void Shoot() {
         attackTimer = attackCooldown;
+        //PoolManager.Instance.Get(data.projectile.prefab, muzzle.position);
         Instantiate(data.projectile.prefab, muzzle.position, muzzle.transform.rotation, null);
 
     }
