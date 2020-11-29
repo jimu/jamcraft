@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+#pragma warning disable 649,414
 public class OutputCell : MonoBehaviour
 {
     public CraftableData data;
