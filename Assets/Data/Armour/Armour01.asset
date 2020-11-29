@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c392e3743d20774881843269810cb4c, type: 3}
   m_Name: Armour01
   m_EditorClassIdentifier: 
+  description: Tin Armour
+  alwaysUseDescription: 1
+  craftingPriority: 777
+  ingredients:
+  - {fileID: 11400000, guid: 10dbd5c55f9d7a2428d52d0a6b72115a, type: 2}
+  icon32: {fileID: 0}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: 2a52361a39cf67f4d941ede9bcacd6ed, type: 3}
   armourName: 
   prefab: {fileID: 5974292212019544373, guid: 879a12927bd22014b89935987f65b489, type: 3}
   damageReduction: 0
-  recipe:
-    redBricks: 0
-    blueBricks: 0
-    greenBricks: 0
-    yellowBricks: 0

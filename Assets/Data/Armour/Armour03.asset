@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c392e3743d20774881843269810cb4c, type: 3}
   m_Name: Armour03
   m_EditorClassIdentifier: 
+  description: Titanium
+  alwaysUseDescription: 1
+  craftingPriority: 999
+  ingredients:
+  - {fileID: 11400000, guid: d942b5a56ea035947b1634acd7ad393a, type: 2}
+  - {fileID: 11400000, guid: 6eb954b2411693a4eb62c0ce305fe99e, type: 2}
+  icon32: {fileID: 0}
+  icon64: {fileID: 0}
+  icon128: {fileID: 21300000, guid: 0b9990b3671218f418bb67472090c25e, type: 3}
   armourName: 
   prefab: {fileID: 2583579313960809902, guid: c9c359d0829fb574081e137a49a163e4, type: 3}
   damageReduction: 0
-  recipe:
-    redBricks: 0
-    blueBricks: 0
-    greenBricks: 0
-    yellowBricks: 0
