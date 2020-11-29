@@ -13,7 +13,7 @@ public class DebugInventoryRewards : MonoBehaviour
 
     private void OnGUI()
     {
-        GUILayout.BeginArea((new Rect(Screen.width - 110, 10, 100, 900)));
+        GUILayout.BeginArea((new Rect(Screen.width - 125, 10, 115, 900)));
         GUILayout.BeginVertical("box", GUILayout.ExpandHeight(true));
 
         foreach (var reward in singleRewards)

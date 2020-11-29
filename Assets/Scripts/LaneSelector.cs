@@ -9,7 +9,7 @@ public class LaneSelector : MonoBehaviour
 
     private void OnGUI()
     {
-        GUILayout.BeginArea((new Rect(Screen.width / 2 - 50 , 10, 100, 900)));
+        GUILayout.BeginArea((new Rect(Screen.width - 300 , 10, 100, 900)));
         GUILayout.BeginVertical("box", GUILayout.ExpandHeight(true));
 
         foreach (NavPath lane in botDispatcher.navPaths)
