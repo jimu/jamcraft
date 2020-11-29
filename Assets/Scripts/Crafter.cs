@@ -44,27 +44,35 @@ public class Crafter : MonoSingleton<Crafter>
     [Tooltip("List of bot components that this crafter can make")]
     [SerializeField] CraftableCatalogData catalogData;
     [SerializeField] CraftableData botOutputPlaceholderData;
+    [SerializeField] FlyoutOutputPanel flyoutOutputPanel;
 
-    
+    List<CraftableData> suppliedOutputList = new List<CraftableData>();
+
     // sorted catalog
     List<CraftableData> catalog;
 
     CraftableData craftOutput;
     Dictionary<CraftableData, int> workbenchItems = new Dictionary<CraftableData, int>();
-        
-
 
     public CraftableData RefreshOutput()
     {
         InventoryWorkbench();
+        suppliedOutputList.Clear();
 
         //Debug.Log($"RefreshRecipe: There are {catalog.Count} recipes. My name is {name}");
 
-        foreach (CraftableData o in catalog)
+        foreach (CraftableData output in catalog)
         {
             //            Debug.Log($"Checking recipe {o.name}: {o.IsSupplied(workbenchItems)}");
-            if (o.IsSupplied(workbenchItems))
-                return SetOutput(o);
+            if (output.IsSupplied(workbenchItems))
+            {
+                suppliedOutputList.Add(output);
+            }
+        }
+
+        if (suppliedOutputList.Count > 0)
+        {
+            return SetOutput(suppliedOutputList[0]);
         }
 
         Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
@@ -266,4 +274,20 @@ void ConstructBotFromParts(Item chassis, Item weapon1, Item weapon2, Item armour
             AddToInventory(item);
     }
 
+    public void OutputClicked(CraftableData data)
+    {
+        CloseFlyout();
+        Debug.Log($"Crafter output: {data.name}");
+    }
+
+    void CloseFlyout()
+    {
+        flyoutOutputPanel.Deactivate();
+    }
+
+    public void ActivateOutputFlyout()
+    {
+        if (suppliedOutputList.Count > 0)
+            flyoutOutputPanel.Activate(suppliedOutputList);
+    }
 }
