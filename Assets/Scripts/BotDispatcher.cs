@@ -43,6 +43,9 @@ public class BotDispatcher : MonoBehaviour
     [Tooltip("Used to set which path the new bots will follow.")]
     NavNode fixedNavPath = null;
 
+    [Tooltip("Health Bar to attach to units")]
+    [SerializeField] GameObject healthBarPrefab;
+
     public void DispatchBot(Bot bot)
     {
         // Set speed
@@ -67,6 +70,7 @@ public class BotDispatcher : MonoBehaviour
         controller.currentHealth = 1f;
         GameManager.Instance.player.bots.Add(controller);
         controller.SetRally(firstNode.GetRandomPointInNode());
+        Instantiate(healthBarPrefab, controller.transform);
         Debug.Log($"DispatchBot: I'm sending {bot.name} along NavPath {firstNode.transform.parent.name}");
     }
 

@@ -100,8 +100,9 @@ public class BotController : Damageable {
 
             if(currentTarget != null) {
 
-                if(currentTarget.isDead) {
+                if(currentTarget.isDead || !currentTarget.gameObject.activeSelf) {
                     currentTarget = null;
+                    navAgent.isStopped = false;
                 } else {
 
                     // disengage if it is too far away

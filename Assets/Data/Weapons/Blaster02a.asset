@@ -24,7 +24,7 @@ MonoBehaviour:
   weaponName: Single Blaster 02 Upgraded
   prefab: {fileID: 2907108056902906582, guid: 837c279f05a3dd4418d5085f3f2d4b39, type: 3}
   projectile: {fileID: 11400000, guid: 2ab04e6d4abe32640b4c0bb13eee27eb, type: 2}
-  fireRate: 2
+  fireRate: 1
   range: 22
   fireVFX: {fileID: 0}
   fireSFX: {fileID: 8300000, guid: 3dc8c20926634b1489ee5b716ff91a4f, type: 3}
