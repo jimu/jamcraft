@@ -15,5 +15,5 @@ MonoBehaviour:
   projectileName: 
   prefab: {fileID: 8037231264084636105, guid: db22fe05f41237547b3b0d3bd5d40378, type: 3}
   impactVFX: {fileID: 0}
-  impactSFX: {fileID: 0}
+  impactSFX: {fileID: 8300000, guid: 3dc8c20926634b1489ee5b716ff91a4f, type: 3}
   damage: 1
