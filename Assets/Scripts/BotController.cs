@@ -96,24 +96,19 @@ public class BotController : Damageable {
         if (!isDead)
         {
 
-            
 
-            if (currentTarget != null)
-            {
 
-                if(currentTarget.isDead) 
-                {
+            if(currentTarget != null) {
+
+                if(currentTarget.isDead) {
                     currentTarget = null;
-                } else { 
+                } else {
 
                     // disengage if it is too far away
-                    if (Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range)
-                    {
+                    if(Vector3.Distance(transform.position, currentTarget.transform.position) + radius > range) {
                         currentTarget = null;
 
-                    }
-                    else
-                    {
+                    } else {
 
                         navAgent.isStopped = true;
 
@@ -125,8 +120,7 @@ public class BotController : Damageable {
 
                         // if the target is infront of the bot, shoot.
                         float angle = 8;
-                        if (Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle)
-                        {
+                        if(Vector3.Angle(transform.forward, currentTarget.transform.position - transform.position) < angle) {
 
                             if(weapon1 != null)
                                 if(weapon1.canShoot())
@@ -139,19 +133,19 @@ public class BotController : Damageable {
                         }
                     }
                 }
-            }
+            } else {
 
-            timeUntilNextSearch -= Time.deltaTime;
-            // if you dont have a target, find one
-            if (currentTarget == null && timeUntilNextSearch < 0f)
-            {
-                timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
-                if (!FindTarget())
-                {
-                    navAgent.SetDestination(rallyPoint);
-                    return;
-                } else {
-                    //navAgent.SetDestination(rallyPoint);
+                timeUntilNextSearch -= Time.deltaTime;
+                // if you dont have a target, find one
+                if(currentTarget == null && timeUntilNextSearch < 0f) {
+                    timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
+                    if(!FindTarget()) {
+                        navAgent.SetDestination(rallyPoint);
+                        navAgent.isStopped = false;
+                        return;
+                    } else {
+                        //navAgent.SetDestination(rallyPoint);
+                    }
                 }
             }
         }

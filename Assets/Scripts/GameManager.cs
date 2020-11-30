@@ -22,6 +22,8 @@ public class GameManager : MonoSingleton<GameManager> {
     [SerializeField] float loseDelay = 2f;
     [SerializeField] float winDelay = 4f;
 
+    public CraftableData[] possibleLoot;
+
     private GameState state = GameState.Error;
 
 
