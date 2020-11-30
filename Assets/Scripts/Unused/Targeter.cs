@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class Targeter : MonoBehaviour
+public class Targeter_unused : MonoBehaviour
 {
     Damageable currentTarget = null;
     Bot bot;
