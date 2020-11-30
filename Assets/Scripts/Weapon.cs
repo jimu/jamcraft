@@ -29,9 +29,18 @@ public class Weapon : MonoBehaviour{
 
     public void Shoot() {
         attackTimer = attackCooldown;
-        //PoolManager.Instance.Get(data.projectile.prefab, muzzle.position);
-        Instantiate(data.projectile.prefab, muzzle.position, muzzle.transform.rotation, null);
+        GameObject o = PoolManager.Instance.Get(data.projectile.prefab, muzzle.position, muzzle.transform.rotation);
+        Debug.Assert(o != null, "projectile object is null", this);
 
+        ProjectileBase pb = o.GetComponent<ProjectileBase>();
+        Debug.Assert(pb != null, "projectile base is null", this);
+        Debug.Assert(data  != null, "weapon data is null", this);
+
+        pb.SetData(data.projectile);
+
+        AudioManager.Instance.PlayOneShot(data.fireSFX);
+
+        //Instantiate(data.projectile.prefab, muzzle.position, muzzle.transform.rotation, null).GetComponent<ProjectileBase>().SetData(data.projectile);
     }
 
     public void Update() {

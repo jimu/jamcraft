@@ -15,7 +15,7 @@ public class BotController : Damageable {
 
     [Header("Combat")]
     [SerializeField] private Transform projectilePoint;
-    public GameObject projectilePrefab;
+    //public GameObject projectilePrefab;
     [SerializeField] private Damageable currentTarget;
     [SerializeField]private float range = 0;
     private float timeUntilNextSearch = TIMEBETWEENTARGETSEARCHES;
@@ -41,8 +41,6 @@ public class BotController : Damageable {
             rb = gameObject.AddComponent<Rigidbody>();
             rb.isKinematic = true;
         }
-
-
     }
 
     public void LoadBot() {

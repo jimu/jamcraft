@@ -62,7 +62,7 @@ public class BotDispatcher : MonoBehaviour
     {
 
         NavNode firstNode = fixedNavPath ?? firstNodes[Random.Range(0, firstNodes.Length)];
-        Debug.Log($"InitNewBot({bot.name})");
+//        Debug.Log($"InitNewBot({bot.name})");
         BotController controller = bot.gameObject.AddComponent<BotController>();
         controller.owner = GameManager.Instance.player;
         controller.LoadBot();

@@ -7,7 +7,8 @@ public class ProjectileBase : MonoBehaviour {
     public float speed;
     public float distance;
     private PlayerBase owner;
-    public int damage = 1;
+    private int damage = 1;
+    private ProjectileData data;
      
     // Component References
     private Rigidbody rb;
@@ -18,15 +19,15 @@ public class ProjectileBase : MonoBehaviour {
         rb.velocity = transform.forward * speed;
     }
 
+    public void SetData(ProjectileData data)
+    {
+        this.data = data;
+    }
+
     // Update is called once per frame
     void Update() {
         distance -= Time.deltaTime * speed;
         if(distance <= 0f) Destroy(gameObject);
-
-        //if (CompareTag("Projectile-Friendly"))
-        //{
-        //    transform.Translate(speed * Vector3.forward * Time.deltaTime);
-        //}
     }
 
     private void OnCollisionEnter(Collision collision) {
@@ -37,8 +38,13 @@ public class ProjectileBase : MonoBehaviour {
             (damageable.alignment == Damageable.Alignment.PLAYER && CompareTag("Projectile-Enemy") ||
             damageable.alignment == Damageable.Alignment.CPU && CompareTag("Projectile-Friendly")))
         {
-            damageable.Damage(damage);
+            damageable.Damage(data.damage);
             //Debug.Log($" {damageable.name} hit by {name} hits={damageable.currentHealth}/{damageable.maxHealth}");
+
+            Debug.Assert(data != null, $"projectile data for {name} is null", this);
+            Debug.Assert(data.impactSFX != null, $"data {data.name} impact sfx is null", this);
+
+            AudioManager.Instance.PlayOneShot(data.impactSFX);
 
             if (CompareTag("Projectile-Friendly"))
             {

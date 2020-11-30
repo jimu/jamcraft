@@ -83,7 +83,7 @@ public class Crafter : MonoSingleton<Crafter>
             return SetOutput(suppliedOutputList[0]);
         }
 
-        Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
+//        Debug.Log($"Returning {(CanConstructBot() ? botOutputPlaceholderData.name : "null")}");
         return SetOutput(CanConstructBot() ? botOutputPlaceholderData : null);
 
     }
@@ -137,7 +137,7 @@ public class Crafter : MonoSingleton<Crafter>
         else
             data = craftOutput;
 
-        Debug.Log($"I'm going to craft a {data.name} ({data.description})");
+//        Debug.Log($"I'm going to craft a {data.name} ({data.description})");
 
         ConsumeResources(data);
 
@@ -182,13 +182,11 @@ public class Crafter : MonoSingleton<Crafter>
 
     bool CanConstructBot()
     {
-        Debug.Log($"CanConstructBot");
         foreach (var item in workbenchContainer.GetComponentsInChildren<Item>())
         {
-            Debug.Log($"* {item}");
             if (item.Data is ChassisData)
             {
-                Debug.Log($" * Returning true because {item.Data.name} is ChassisData");
+                //Debug.Log($" * Returning true because {item.Data.name} is ChassisData");
                 return true;
             }
         }
