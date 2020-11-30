@@ -60,6 +60,7 @@ public class Targeter : MonoBehaviour
             Debug.Log($"{name} {transform.position} {transform.rotation.eulerAngles}: shooting at {currentTarget.name} ({currentTarget.transform.position})");
 
             GameObject g = PoolManager.Instance.Get(bot.weapon1.projectile.prefab, bot.muzzle1.position, bot.muzzle1.rotation);
+            AudioManager.Instance.PlayOneShot(bot.weapon1.fireSFX);
             //Debug.Log($" * firer      {name}: ({transform.position}) {transform.rotation.eulerAngles}");
             //Debug.Log($" * projectile {g.name}: ({g.transform.position}) {g.transform.rotation.eulerAngles}");
         }
