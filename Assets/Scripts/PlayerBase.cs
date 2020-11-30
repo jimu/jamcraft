@@ -20,7 +20,10 @@ public class PlayerBase : MonoBehaviour {
                 // GIVE PLAYER RESOURCE
                 if(bots[i].alignment == BotController.Alignment.CPU) {
                     if(GameManager.Instance.possibleLoot.Length > 0) {
-                        Crafter.Instance.AddToInventory(GameManager.Instance.possibleLoot[Random.Range(0, GameManager.Instance.possibleLoot.Length-1)]);
+                        // give 2 items
+                        for(int loots = 0; loots < 2; loots++) {
+                            Crafter.Instance.AddToInventory(GameManager.Instance.possibleLoot[Random.Range(0, GameManager.Instance.possibleLoot.Length - 1)]);
+                        }
                     }
                 }
 
