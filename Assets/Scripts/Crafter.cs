@@ -186,7 +186,7 @@ public class Crafter : MonoSingleton<Crafter>
         {
             if (item.Data is ChassisData)
             {
-                Debug.Log($" * Returning true because {item.Data.name} is ChassisData");
+                //Debug.Log($" * Returning true because {item.Data.name} is ChassisData");
                 return true;
             }
         }
